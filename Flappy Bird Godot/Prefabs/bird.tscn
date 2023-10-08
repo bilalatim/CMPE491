@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://cr4d31vwnnyh7"]
+
+[ext_resource type="Texture2D" uid="uid://cr6dfqmyfr5be" path="res://Assets/sprites/yellowbird-midflap.png" id="1_7lqnw"]
+[ext_resource type="Texture2D" uid="uid://cye80h3rkblml" path="res://Assets/sprites/yellowbird-downflap.png" id="1_m7rtx"]
+[ext_resource type="Script" path="res://Prefabs/bird.gd" id="1_t1on3"]
+[ext_resource type="Texture2D" uid="uid://5acey666fgg2" path="res://Assets/sprites/yellowbird-upflap.png" id="3_j05mj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j0h0k"]
+radius = 11.0
+height = 32.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5juci"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w0v2k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m7rtx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_7lqnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j05mj")
+}],
+"loop": true,
+"name": &"YellowBirdFlyAnim",
+"speed": 10.0
+}]
+
+[node name="Bird" type="Area2D"]
+position = Vector2(97, 86)
+script = ExtResource("1_t1on3")
+speed = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_j0h0k")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_5juci")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_j0h0k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w0v2k")
+animation = &"YellowBirdFlyAnim"
+frame = 1
+frame_progress = 0.185452

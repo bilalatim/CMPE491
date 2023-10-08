@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://qxi3w3x84bg2"]
+
+[ext_resource type="Texture2D" uid="uid://cglbl31lno6g2" path="res://Assets/sprites/background-day.png" id="1_2keub"]
+[ext_resource type="Script" path="res://Prefabs/main.gd" id="1_hnb0u"]
+[ext_resource type="PackedScene" uid="uid://c2txn2ax22ouv" path="res://Prefabs/yellow_pipe.tscn" id="2_gu0t3"]
+[ext_resource type="PackedScene" uid="uid://tqww2l327sw8" path="res://Prefabs/yellow_bird.tscn" id="4_do0i5"]
+[ext_resource type="PackedScene" uid="uid://b1hhvweshfd1g" path="res://Prefabs/hud.tscn" id="5_p84p6"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_hnb0u")
+yellow_pipe = ExtResource("2_gu0t3")
+
+[node name="GAME" type="Node" parent="."]
+process_mode = 1
+
+[node name="Background" type="Sprite2D" parent="GAME"]
+position = Vector2(234, 342)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("1_2keub")
+
+[node name="Camera2D" type="Camera2D" parent="GAME"]
+position = Vector2(233, 359)
+
+[node name="Timer" type="Timer" parent="GAME"]
+autostart = true
+
+[node name="YellowBird" parent="GAME" instance=ExtResource("4_do0i5")]
+position = Vector2(96, 239)
+
+[node name="HUD" parent="." instance=ExtResource("5_p84p6")]
+process_mode = 3
+
+[connection signal="timeout" from="GAME/Timer" to="." method="_on_timer_timeout"]
+[connection signal="earn_point" from="GAME/YellowBird" to="HUD" method="update_score"]
+[connection signal="lose_game" from="GAME/YellowBird" to="." method="lose_game"]
+[connection signal="play_game" from="HUD" to="." method="start_game"]
+[connection signal="restart_game" from="HUD" to="." method="restart_game"]
