@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 5ba412c193892dd469a1dde2ad0ef701, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4f1f21d03b44ae84b8d92441d6456029, type: 3}
+  - {fileID: 21300000, guid: de5b5bc13f4fb7d48a040434b808b04f, type: 3}
+  - {fileID: 21300000, guid: cfa23ef17bc279044afc15cd3c38acfb, type: 3}
+  - {fileID: 21300000, guid: 9e44d2d2bdeccb84fa03098854d7717d, type: 3}
+  - {fileID: 21300000, guid: c08ccbb3a5ff68643b5ae7e930adc1c5, type: 3}
+  - {fileID: 21300000, guid: c34e05469e613aa40b2729352b297e04, type: 3}
+  - {fileID: 21300000, guid: e84d687786ed5ec468b3cdb0730856de, type: 3}
+  - {fileID: 21300000, guid: ebbc1387803706e468079f4df12000af, type: 3}
+  - {fileID: 21300000, guid: 14b149d730f93d644a09d8959cba36b9, type: 3}
+  - {fileID: 21300000, guid: 4f8ab1e9b35c8ed408aa24647827942f, type: 3}
+  - {fileID: 21300000, guid: 3dd3680a1a546ab489d2dc87277f7e53, type: 3}
+  - {fileID: 21300000, guid: 1d8f0c1a23377f84cb01402577898686, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SagaPointButtonGreen
+  - board-game
+  - mushroom
+  - SagaPointButtonRed
+  - SagaPointButtonBack
+  - SagaPointButtonGrey
+  - game-console
+  - ghost
+  - SagaPointButtonBlue
+  - video-game
+  - dice
+  - strategy
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
