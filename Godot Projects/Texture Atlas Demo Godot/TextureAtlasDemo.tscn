@@ -1,0 +1,133 @@
+[gd_scene load_steps=13 format=3 uid="uid://bcjjtip5s6ued"]
+
+[ext_resource type="Texture2D" uid="uid://cks154ccdwjmh" path="res://Image/board-game.png" id="1_nv3pp"]
+[ext_resource type="Texture2D" uid="uid://83cfjygdeano" path="res://Image/game-console.png" id="2_x52qu"]
+[ext_resource type="Texture2D" uid="uid://d2l2ad4hi0lae" path="res://Image/mushroom.png" id="3_vh8cf"]
+[ext_resource type="Texture2D" uid="uid://cexef8opurwav" path="res://Image/strategy.png" id="4_yqo3l"]
+[ext_resource type="Texture2D" uid="uid://bbe6xkr8te5x2" path="res://Image/video-game.png" id="5_kj1h5"]
+[ext_resource type="Texture2D" uid="uid://ca2e2s3rvm2cx" path="res://Image/SagaPointButtonBack.png" id="6_v2cev"]
+[ext_resource type="Texture2D" uid="uid://dsi7vpbrmoe7o" path="res://Image/SagaPointButtonRed.png" id="7_2s23g"]
+[ext_resource type="Texture2D" uid="uid://bntoxtrruxaco" path="res://Image/dice.png" id="8_ojdpn"]
+[ext_resource type="Texture2D" uid="uid://bl5nossh4ooxd" path="res://Image/SagaPointButtonGreen.png" id="9_eqd80"]
+[ext_resource type="Texture2D" uid="uid://c56vpanpgt5mp" path="res://Image/SagaPointButtonGrey.png" id="10_xu2p0"]
+[ext_resource type="Texture2D" uid="uid://ci6sycnvr56ta" path="res://Image/ghost.png" id="11_6nkmr"]
+[ext_resource type="Texture2D" uid="uid://bai7tue5oexon" path="res://Image/SagaPointButtonBlue.png" id="12_fi4yp"]
+
+[node name="Texture Atlas" type="Node2D"]
+
+[node name="Board-game" type="Sprite2D" parent="."]
+position = Vector2(201, 258)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_nv3pp")
+
+[node name="Game-console" type="Sprite2D" parent="."]
+position = Vector2(628, 260)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_x52qu")
+
+[node name="Strategy" type="Sprite2D" parent="."]
+position = Vector2(798, 594)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_yqo3l")
+
+[node name="Mushroom" type="Sprite2D" parent="."]
+position = Vector2(1022, 251)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_vh8cf")
+
+[node name="Video-game" type="Sprite2D" parent="."]
+position = Vector2(440, 587)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_kj1h5")
+
+[node name="Node2D5" type="Node2D" parent="."]
+position = Vector2(971, 1438)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D5"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonRed" type="Sprite2D" parent="Node2D5"]
+texture = ExtResource("7_2s23g")
+
+[node name="Dice" type="Sprite2D" parent="Node2D5"]
+position = Vector2(11, 73)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_ojdpn")
+
+[node name="Node2D6" type="Node2D" parent="."]
+position = Vector2(983, 1791)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D6"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonGreen" type="Sprite2D" parent="Node2D6"]
+texture = ExtResource("9_eqd80")
+
+[node name="Dice" type="Sprite2D" parent="Node2D6"]
+position = Vector2(17, 90)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_ojdpn")
+
+[node name="Node2D7" type="Node2D" parent="."]
+position = Vector2(991, 2170)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D7"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonGrey" type="Sprite2D" parent="Node2D7"]
+texture = ExtResource("10_xu2p0")
+
+[node name="Ghost" type="Sprite2D" parent="Node2D7"]
+position = Vector2(5, 68.0002)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_6nkmr")
+
+[node name="Node2D8" type="Node2D" parent="."]
+position = Vector2(973, 1120)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D8"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonBlue" type="Sprite2D" parent="Node2D8"]
+texture = ExtResource("12_fi4yp")
+
+[node name="Ghost" type="Sprite2D" parent="Node2D8"]
+position = Vector2(5, 68.0002)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_6nkmr")
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(186, 1445)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D2"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonRed" type="Sprite2D" parent="Node2D2"]
+texture = ExtResource("7_2s23g")
+
+[node name="Node2D3" type="Node2D" parent="."]
+position = Vector2(198, 1798)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D3"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonGreen" type="Sprite2D" parent="Node2D3"]
+texture = ExtResource("9_eqd80")
+
+[node name="Node2D4" type="Node2D" parent="."]
+position = Vector2(206, 2177)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D4"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonGrey" type="Sprite2D" parent="Node2D4"]
+texture = ExtResource("10_xu2p0")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(188, 1127)
+
+[node name="SagaPointButtonBack" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("6_v2cev")
+
+[node name="SagaPointButtonBlue" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("12_fi4yp")

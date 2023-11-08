@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://v8y61xu0htdb"]
+
+[ext_resource type="PackedScene" uid="uid://bcjjtip5s6ued" path="res://TextureAtlasDemo.tscn" id="1_ghrv8"]
+[ext_resource type="Texture2D" uid="uid://d2bha7nvu0cl" path="res://Image/playing-cards.png" id="2_p14u2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Texture Atlas" parent="." instance=ExtResource("1_ghrv8")]
+position = Vector2(51, 158)
+
+[node name="Playing-cards" type="Sprite2D" parent="."]
+position = Vector2(631, 1385)
+texture = ExtResource("2_p14u2")
