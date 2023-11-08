@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdkrqxb52y8kb"]
+
+[ext_resource type="PackedScene" uid="uid://c8v4nqnddeefq" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Meshes/door3_4x3.obj" id="1_6h0pj"]
+
+[node name="door3_4x3" type="Node3D"]
+
+[node name="door3_4x3" parent="." instance=ExtResource("1_6h0pj")]
+
+[editable path="door3_4x3"]

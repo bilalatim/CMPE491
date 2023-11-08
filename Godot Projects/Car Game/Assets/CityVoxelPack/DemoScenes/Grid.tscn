@@ -1,0 +1,476 @@
+[gd_scene load_steps=73 format=3 uid="uid://clpu3mvc0230n"]
+
+[ext_resource type="PackedScene" uid="uid://scf0xewtv4lp" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building1.prefab.tscn" id="1_aa1wt"]
+[ext_resource type="PackedScene" uid="uid://dgsfg7fbqkg8f" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building2.prefab.tscn" id="2_q05iu"]
+[ext_resource type="PackedScene" uid="uid://blndyap1sludw" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building3.prefab.tscn" id="3_yadm8"]
+[ext_resource type="PackedScene" uid="uid://d0qj7ru6mtwss" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building4.prefab.tscn" id="4_pvpkl"]
+[ext_resource type="PackedScene" uid="uid://bkafcnqcids2r" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building5.prefab.tscn" id="5_jous7"]
+[ext_resource type="PackedScene" uid="uid://dofprx2rferv6" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building6.prefab.tscn" id="6_2ipcs"]
+[ext_resource type="PackedScene" uid="uid://bt6v7fq57e451" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building7.prefab.tscn" id="7_j2wa8"]
+[ext_resource type="PackedScene" uid="uid://genr4w81cib5" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building8.prefab.tscn" id="8_0m6x3"]
+[ext_resource type="PackedScene" uid="uid://wcssx70pkuqo" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building9.prefab.tscn" id="9_nrj44"]
+[ext_resource type="PackedScene" uid="uid://gluxw4mirev5" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building10.prefab.tscn" id="10_a2c7d"]
+[ext_resource type="PackedScene" uid="uid://cqw7bh0w3hk6f" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building11.prefab.tscn" id="11_ujrev"]
+[ext_resource type="PackedScene" uid="uid://1uwkooa4x2rb" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab.tscn" id="12_4bgxx"]
+[ext_resource type="PackedScene" uid="uid://dpcrmsk05s0px" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building13.prefab.tscn" id="13_43ugx"]
+[ext_resource type="PackedScene" uid="uid://bj5jjcgnyjb6s" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building14.prefab.tscn" id="14_rmfeh"]
+[ext_resource type="PackedScene" uid="uid://6rdm0swpkg3y" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door1_4x3.prefab.tscn" id="15_x41hv"]
+[ext_resource type="PackedScene" uid="uid://cbb6m7bfccl2e" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door1_4x5.prefab.tscn" id="16_uq4il"]
+[ext_resource type="PackedScene" uid="uid://bo5evef6x27u5" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x3.prefab.tscn" id="17_p8ixg"]
+[ext_resource type="PackedScene" uid="uid://h7huggi7r7a3" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab.tscn" id="18_wilfp"]
+[ext_resource type="PackedScene" uid="uid://bdkrqxb52y8kb" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door3_4x3.prefab.tscn" id="19_5dbw2"]
+[ext_resource type="PackedScene" uid="uid://cj44cj2p7pi1w" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door3_4x5.prefab.tscn" id="20_5omm8"]
+[ext_resource type="PackedScene" uid="uid://dfn745bvqwluh" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x3.prefab.tscn" id="21_5iird"]
+[ext_resource type="PackedScene" uid="uid://ew24pu3td3oa" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x5.prefab.tscn" id="22_bgyyy"]
+[ext_resource type="PackedScene" uid="uid://b8uru2fogyhte" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window1_2x2.prefab.tscn" id="23_bv7ur"]
+[ext_resource type="PackedScene" uid="uid://b0oofwc18d5hs" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window1_2x3.prefab.tscn" id="24_kdc2q"]
+[ext_resource type="PackedScene" uid="uid://uuie763h4jn4" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window1_3x2.prefab.tscn" id="25_j24m6"]
+[ext_resource type="PackedScene" uid="uid://pfe58low684h" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window2_2x2.prefab.tscn" id="26_uyjia"]
+[ext_resource type="PackedScene" uid="uid://cusyyh3p7bb0v" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window2_2x3.prefab.tscn" id="27_y3wc3"]
+[ext_resource type="PackedScene" uid="uid://dgahmsvypbtgy" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window2_3x2.prefab.tscn" id="28_arc67"]
+[ext_resource type="PackedScene" uid="uid://cm8a8b2c5dit1" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_2x2.prefab.tscn" id="29_kjvcm"]
+[ext_resource type="PackedScene" uid="uid://bt5q337x3lbrw" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_2x3.prefab.tscn" id="30_tyyux"]
+[ext_resource type="PackedScene" uid="uid://bvxro2ltodmj6" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_3x2.prefab.tscn" id="31_8jnis"]
+[ext_resource type="PackedScene" uid="uid://d00yhbqx2n5kj" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road10.prefab.tscn" id="32_0g8u2"]
+[ext_resource type="PackedScene" uid="uid://dtr5x7ulobh1g" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road11.prefab.tscn" id="33_8is2i"]
+[ext_resource type="PackedScene" uid="uid://nem7ky2qw580" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road12.prefab.tscn" id="34_henkw"]
+[ext_resource type="PackedScene" uid="uid://dbchd6q5tef4t" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road12bis.prefab.tscn" id="35_6e1w1"]
+[ext_resource type="PackedScene" uid="uid://c2hyktt5dmwwf" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road12bisbis.prefab.tscn" id="36_8t4om"]
+[ext_resource type="PackedScene" uid="uid://dpxxdv8nsjad2" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road13.prefab.tscn" id="37_tw8bs"]
+[ext_resource type="PackedScene" uid="uid://utmvugxtsgjc" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road13bis.prefab.tscn" id="38_t064n"]
+[ext_resource type="PackedScene" uid="uid://bnipq7hjdqq0u" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road14.prefab.tscn" id="39_4cnmw"]
+[ext_resource type="PackedScene" uid="uid://bjuy4bqaaraey" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road14bis.prefab.tscn" id="40_34ft5"]
+[ext_resource type="PackedScene" uid="uid://btjsl2xuqgvc2" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road14bisbis.prefab.tscn" id="41_55plj"]
+[ext_resource type="PackedScene" uid="uid://b8i4aor08c8dh" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road15.prefab.tscn" id="42_n6rj0"]
+[ext_resource type="PackedScene" uid="uid://b7m2jqosdj72q" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road16.prefab.tscn" id="43_8jwqh"]
+[ext_resource type="PackedScene" uid="uid://bgoyn02qynjvi" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road16bis.prefab.tscn" id="44_aed3v"]
+[ext_resource type="PackedScene" uid="uid://cap45ykiq04e3" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road16bisbis.prefab.tscn" id="45_65e6r"]
+[ext_resource type="PackedScene" uid="uid://blbcroo68syx5" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road17.prefab.tscn" id="46_mmrkg"]
+[ext_resource type="PackedScene" uid="uid://76qqshk2e8u6" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road17bis.prefab.tscn" id="47_wx6q7"]
+[ext_resource type="PackedScene" uid="uid://2eknl8fe70po" path="res://Assets/CityVoxelPack/Assets/roads/tall/Prefabs/road17bisbis.prefab.tscn" id="48_667f8"]
+[ext_resource type="PackedScene" uid="uid://bmnp3xoujg6l7" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road1.prefab.tscn" id="49_pp750"]
+[ext_resource type="PackedScene" uid="uid://d1fistmrcyj8n" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road2.prefab.tscn" id="50_emgu2"]
+[ext_resource type="PackedScene" uid="uid://b8nyw736q5lot" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road3.prefab.tscn" id="51_76xaa"]
+[ext_resource type="PackedScene" uid="uid://c560tohueksxh" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road3bis.prefab.tscn" id="52_dmow7"]
+[ext_resource type="PackedScene" uid="uid://bao4fkslj6sps" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road4.prefab.tscn" id="53_bbpk4"]
+[ext_resource type="PackedScene" uid="uid://bkykgpwdpf4gs" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road5.prefab.tscn" id="54_km6bm"]
+[ext_resource type="PackedScene" uid="uid://dkag3lbvpsrf3" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road6.prefab.tscn" id="55_oonr0"]
+[ext_resource type="PackedScene" uid="uid://5pse0iq4yvj0" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road6bis.prefab.tscn" id="56_21663"]
+[ext_resource type="PackedScene" uid="uid://conqym0bke3ay" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road6bisbis.prefab.tscn" id="57_5m26g"]
+[ext_resource type="PackedScene" uid="uid://bve56jaujjapm" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road7.prefab.tscn" id="58_yws8p"]
+[ext_resource type="PackedScene" uid="uid://b0pnk3tu5tg10" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road7bis.prefab.tscn" id="59_7hohh"]
+[ext_resource type="PackedScene" uid="uid://dyqkyp7kx5pag" path="res://Assets/CityVoxelPack/Assets/roads/medium/Prefabs/road7bisbis.prefab.tscn" id="60_unjb3"]
+[ext_resource type="PackedScene" uid="uid://j5otfyhp0r7l" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavement1-3.prefab.tscn" id="61_2opkv"]
+[ext_resource type="PackedScene" uid="uid://cdusalslhh4w" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavement1-4.prefab.tscn" id="62_dmfdm"]
+[ext_resource type="PackedScene" uid="uid://osf7paac1kp1" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavement1-5.prefab.tscn" id="63_pr72l"]
+[ext_resource type="PackedScene" uid="uid://ccr5lwebd8c05" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavement1-10.prefab.tscn" id="64_mu86o"]
+[ext_resource type="PackedScene" uid="uid://b2kc1u61u3ufv" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavementCorner(2)1-5.prefab.tscn" id="65_4xghj"]
+[ext_resource type="PackedScene" uid="uid://dynqxo2e7tw4j" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavementCorner(3)1-5.prefab.tscn" id="66_me8db"]
+[ext_resource type="PackedScene" uid="uid://dd3ugfiw4icji" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavementCorner1-5.prefab.tscn" id="67_4gjau"]
+[ext_resource type="PackedScene" uid="uid://dqsp6dsalkni4" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavementCorner1-10.prefab.tscn" id="68_6t4r2"]
+[ext_resource type="PackedScene" uid="uid://bap2c8ubikbr6" path="res://Assets/CityVoxelPack/Assets/pavements/Prefabs/pavementCornerCircle(3)1-10.prefab.tscn" id="69_31oxb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4srfn"]
+resource_name = "Default-Skybox"
+sky_top_color = Color(0.454902, 0.678431, 0.87451, 1)
+sky_horizon_color = Color(0.894118, 0.952941, 1, 1)
+sky_curve = 0.0731028
+ground_bottom_color = Color(0.454902, 0.470588, 0.490196, 1)
+ground_horizon_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Sky" id="Sky_u06jj"]
+sky_material = SubResource("ProceduralSkyMaterial_4srfn")
+
+[sub_resource type="Environment" id="Environment_hi2uv"]
+background_mode = 2
+sky = SubResource("Sky_u06jj")
+fog_light_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="RootNode3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hi2uv")
+
+[node name="Main Camera" type="Node3D" parent="."]
+transform = Transform3D(-1, -4.75035e-08, -7.33905e-08, 0, 0.839489, -0.543376, 8.74228e-08, -0.543376, -0.839489, 590, 343, 521)
+
+[node name="Camera" type="Camera3D" parent="Main Camera"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+cull_mask = 4294967295
+fov = 78.3778
+size = 5.0
+near = 0.3
+far = 1000.0
+metadata/unidot_keys = {
+"far clip plane": 1000,
+"field of view": 78.3778,
+"m_AllowDynamicResolution": 0,
+"m_AllowMSAA": 1,
+"m_BackGroundColor": Color(0.192157, 0.301961, 0.47451, 0),
+"m_ClearFlags": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullingMask": {
+"m_Bits": 4294967295,
+"serializedVersion": 2
+},
+"m_Depth": -1,
+"m_Enabled": 1,
+"m_FOVAxisMode": 0,
+"m_FocalLength": 50,
+"m_ForceIntoRT": 0,
+"m_GameObject": [null, 968530318, null, null],
+"m_GateFitMode": 2,
+"m_HDR": 1,
+"m_LensShift": Vector2(0, 0),
+"m_NormalizedViewPortRect": {
+"height": 1,
+"serializedVersion": 2,
+"width": 1,
+"x": 0,
+"y": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OcclusionCulling": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RenderingPath": -1,
+"m_SensorSize": Vector2(36, 24),
+"m_StereoConvergence": 10,
+"m_StereoSeparation": 0.022,
+"m_TargetDisplay": 0,
+"m_TargetEye": 3,
+"m_TargetTexture": [null, 0, null, null],
+"m_projectionMatrixMode": 1,
+"near clip plane": 0.3,
+"orthographic": 0,
+"orthographic size": 5,
+"serializedVersion": 2
+}
+
+[node name="Directional Light" type="Node3D" parent="."]
+transform = Transform3D(0.953211, 0.258707, 0.156392, 0.255239, -0.411524, -0.874929, -0.161991, 0.87391, -0.458302, 0, 0, 0)
+
+[node name="Light" type="DirectionalLight3D" parent="Directional Light"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+light_energy = 1.5
+light_bake_mode = 0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4
+
+[node name="Grid" type="Node3D" parent="."]
+
+[node name="Buildings" type="Node3D" parent="Grid"]
+
+[node name="Medium" type="Node3D" parent="Grid/Buildings"]
+
+[node name="building1" parent="Grid/Buildings/Medium" instance=ExtResource("1_aa1wt")]
+
+[node name="building2" parent="Grid/Buildings/Medium" instance=ExtResource("2_q05iu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="building3" parent="Grid/Buildings/Medium" instance=ExtResource("3_yadm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0)
+
+[node name="building4" parent="Grid/Buildings/Medium" instance=ExtResource("4_pvpkl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 0)
+
+[node name="building9" parent="Grid/Buildings/Medium" instance=ExtResource("5_jous7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, 0)
+
+[node name="building10" parent="Grid/Buildings/Medium" instance=ExtResource("6_2ipcs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 250, 0, 0)
+
+[node name="building11" parent="Grid/Buildings/Medium" instance=ExtResource("7_j2wa8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 0)
+
+[node name="building13" parent="Grid/Buildings/Medium" instance=ExtResource("8_0m6x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 350, 0, 0)
+
+[node name="building14" parent="Grid/Buildings/Medium" instance=ExtResource("9_nrj44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 400, 0, 0)
+
+[node name="building16" parent="Grid/Buildings/Medium" instance=ExtResource("10_a2c7d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 0)
+
+[node name="building17" parent="Grid/Buildings/Medium" instance=ExtResource("11_ujrev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 500, 0, 0)
+
+[node name="building18" parent="Grid/Buildings/Medium" instance=ExtResource("12_4bgxx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 550, 0, 0)
+
+[node name="building19" parent="Grid/Buildings/Medium" instance=ExtResource("13_43ugx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 0)
+
+[node name="building20" parent="Grid/Buildings/Medium" instance=ExtResource("14_rmfeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 650, 0, 0)
+
+[node name="Props" type="Node3D" parent="Grid/Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50)
+
+[node name="Doors" type="Node3D" parent="Grid/Buildings/Props"]
+
+[node name="door1_4x3" parent="Grid/Buildings/Props/Doors" instance=ExtResource("15_x41hv")]
+
+[node name="door1_4x5" parent="Grid/Buildings/Props/Doors" instance=ExtResource("16_uq4il")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="door2_4x3" parent="Grid/Buildings/Props/Doors" instance=ExtResource("17_p8ixg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="door2_4x5" parent="Grid/Buildings/Props/Doors" instance=ExtResource("18_wilfp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="door3_4x3" parent="Grid/Buildings/Props/Doors" instance=ExtResource("19_5dbw2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="door3_4x5" parent="Grid/Buildings/Props/Doors" instance=ExtResource("20_5omm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="door4_4x3" parent="Grid/Buildings/Props/Doors" instance=ExtResource("21_5iird")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="door4_4x5" parent="Grid/Buildings/Props/Doors" instance=ExtResource("22_bgyyy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="Windows" type="Node3D" parent="Grid/Buildings/Props"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="window1_2x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("23_bv7ur")]
+
+[node name="window1_2x3" parent="Grid/Buildings/Props/Windows" instance=ExtResource("24_kdc2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="window1_3x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("25_j24m6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="window2_2x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("26_uyjia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="window2_2x3" parent="Grid/Buildings/Props/Windows" instance=ExtResource("27_y3wc3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="window2_3x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("28_arc67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="window3_2x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("29_kjvcm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="window3_2x3" parent="Grid/Buildings/Props/Windows" instance=ExtResource("30_tyyux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="window3_3x2" parent="Grid/Buildings/Props/Windows" instance=ExtResource("31_8jnis")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="Roads" type="Node3D" parent="Grid"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 120)
+
+[node name="Large" type="Node3D" parent="Grid/Roads"]
+
+[node name="road10" parent="Grid/Roads/Large" instance=ExtResource("32_0g8u2")]
+
+[node name="road11" parent="Grid/Roads/Large" instance=ExtResource("33_8is2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="road12" parent="Grid/Roads/Large" instance=ExtResource("34_henkw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 0)
+
+[node name="road12bis" parent="Grid/Roads/Large" instance=ExtResource("35_6e1w1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 240, 0, 0)
+
+[node name="road12bisbis" parent="Grid/Roads/Large" instance=ExtResource("36_8t4om")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 320, 0, 0)
+
+[node name="road13" parent="Grid/Roads/Large" instance=ExtResource("37_tw8bs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 400, 0, 0)
+
+[node name="road13bis" parent="Grid/Roads/Large" instance=ExtResource("38_t064n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 480, 0, 0)
+
+[node name="road14" parent="Grid/Roads/Large" instance=ExtResource("39_4cnmw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 560, 0, 0)
+
+[node name="road14bis" parent="Grid/Roads/Large" instance=ExtResource("40_34ft5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 640, 0, 0)
+
+[node name="road14bisbis" parent="Grid/Roads/Large" instance=ExtResource("41_55plj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 720, 0, 0)
+
+[node name="road15" parent="Grid/Roads/Large" instance=ExtResource("42_n6rj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 800, 0, 0)
+
+[node name="road16" parent="Grid/Roads/Large" instance=ExtResource("43_8jwqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 880, 0, 0)
+
+[node name="road16bis" parent="Grid/Roads/Large" instance=ExtResource("44_aed3v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 960, 0, 0)
+
+[node name="road16bisbis" parent="Grid/Roads/Large" instance=ExtResource("45_65e6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1040, 0, 0)
+
+[node name="road17" parent="Grid/Roads/Large" instance=ExtResource("46_mmrkg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1120, 0, 0)
+
+[node name="road17bis" parent="Grid/Roads/Large" instance=ExtResource("47_wx6q7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 0)
+
+[node name="MeshRenderer" parent="Grid/Roads/Large/road17bis/road17bis" index="0"]
+mesh = null
+
+[node name="road17bisbis" parent="Grid/Roads/Large" instance=ExtResource("48_667f8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1280, 0, 0)
+
+[node name="Medium" type="Node3D" parent="Grid/Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 80)
+
+[node name="road1" parent="Grid/Roads/Medium" instance=ExtResource("49_pp750")]
+
+[node name="road2" parent="Grid/Roads/Medium" instance=ExtResource("50_emgu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="road3" parent="Grid/Roads/Medium" instance=ExtResource("51_76xaa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0)
+
+[node name="road3bis" parent="Grid/Roads/Medium" instance=ExtResource("52_dmow7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 180, 0, 0)
+
+[node name="road4" parent="Grid/Roads/Medium" instance=ExtResource("53_bbpk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 240, 0, 0)
+
+[node name="road5" parent="Grid/Roads/Medium" instance=ExtResource("54_km6bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 0)
+
+[node name="road6" parent="Grid/Roads/Medium" instance=ExtResource("55_oonr0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 360, 0, 0)
+
+[node name="road6bis" parent="Grid/Roads/Medium" instance=ExtResource("56_21663")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 420, 0, 0)
+
+[node name="road6bisbis" parent="Grid/Roads/Medium" instance=ExtResource("57_5m26g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 480, 0, 0)
+
+[node name="road7" parent="Grid/Roads/Medium" instance=ExtResource("58_yws8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 540, 0, 0)
+
+[node name="road7bis" parent="Grid/Roads/Medium" instance=ExtResource("59_7hohh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 0)
+
+[node name="MeshRenderer" parent="Grid/Roads/Medium/road7bis/road7bis" index="0"]
+mesh = null
+
+[node name="road7bisbis" parent="Grid/Roads/Medium" instance=ExtResource("60_unjb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 660, 0, 0)
+
+[node name="Pavements" type="Node3D" parent="Grid/Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 120)
+
+[node name="pavement1-3" parent="Grid/Roads/Pavements" instance=ExtResource("61_2opkv")]
+
+[node name="pavement1-4" parent="Grid/Roads/Pavements" instance=ExtResource("62_dmfdm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="pavement1-5" parent="Grid/Roads/Pavements" instance=ExtResource("63_pr72l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="pavement1-10" parent="Grid/Roads/Pavements" instance=ExtResource("64_mu86o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="pavementCorner(2)1-5" parent="Grid/Roads/Pavements" instance=ExtResource("65_4xghj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="pavementCorner(3)1-5" parent="Grid/Roads/Pavements" instance=ExtResource("66_me8db")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0)
+
+[node name="pavementCorner1-5" parent="Grid/Roads/Pavements" instance=ExtResource("67_4gjau")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0)
+
+[node name="pavementCorner1-10" parent="Grid/Roads/Pavements" instance=ExtResource("68_6t4r2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 0)
+
+[node name="pavementCornerCircle(3)1-10" parent="Grid/Roads/Pavements" instance=ExtResource("69_31oxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 0)
+
+[editable path="Grid/Buildings/Medium/building1"]
+[editable path="Grid/Buildings/Medium/building2"]
+[editable path="Grid/Buildings/Medium/building3"]
+[editable path="Grid/Buildings/Medium/building4"]
+[editable path="Grid/Buildings/Medium/building9"]
+[editable path="Grid/Buildings/Medium/building10"]
+[editable path="Grid/Buildings/Medium/building11"]
+[editable path="Grid/Buildings/Medium/building13"]
+[editable path="Grid/Buildings/Medium/building14"]
+[editable path="Grid/Buildings/Medium/building16"]
+[editable path="Grid/Buildings/Medium/building17"]
+[editable path="Grid/Buildings/Medium/building18"]
+[editable path="Grid/Buildings/Medium/building19"]
+[editable path="Grid/Buildings/Medium/building20"]
+[editable path="Grid/Buildings/Props/Doors/door1_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door1_4x3/door1_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door1_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door1_4x5/door1_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door2_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door2_4x3/door2_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door2_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door2_4x5/door2_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door3_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door3_4x3/door3_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door3_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door3_4x5/door3_4x5"]
+[editable path="Grid/Buildings/Props/Doors/door4_4x3"]
+[editable path="Grid/Buildings/Props/Doors/door4_4x5"]
+[editable path="Grid/Buildings/Props/Windows/window1_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window1_2x2/window1_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window1_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window1_2x3/window1_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window1_3x2"]
+[editable path="Grid/Buildings/Props/Windows/window1_3x2/window1_3x2"]
+[editable path="Grid/Buildings/Props/Windows/window2_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window2_2x2/window2_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window2_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window2_2x3/window2_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window2_3x2"]
+[editable path="Grid/Buildings/Props/Windows/window2_3x2/window2_3x2"]
+[editable path="Grid/Buildings/Props/Windows/window3_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window3_2x2/window3_2x2"]
+[editable path="Grid/Buildings/Props/Windows/window3_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window3_2x3/window3_2x3"]
+[editable path="Grid/Buildings/Props/Windows/window3_3x2"]
+[editable path="Grid/Buildings/Props/Windows/window3_3x2/window3_3x2"]
+[editable path="Grid/Roads/Large/road10"]
+[editable path="Grid/Roads/Large/road11"]
+[editable path="Grid/Roads/Large/road12"]
+[editable path="Grid/Roads/Large/road12bis"]
+[editable path="Grid/Roads/Large/road12bisbis"]
+[editable path="Grid/Roads/Large/road13"]
+[editable path="Grid/Roads/Large/road13bis"]
+[editable path="Grid/Roads/Large/road14"]
+[editable path="Grid/Roads/Large/road14bis"]
+[editable path="Grid/Roads/Large/road14bisbis"]
+[editable path="Grid/Roads/Large/road15"]
+[editable path="Grid/Roads/Large/road16"]
+[editable path="Grid/Roads/Large/road16bis"]
+[editable path="Grid/Roads/Large/road16bisbis"]
+[editable path="Grid/Roads/Large/road17"]
+[editable path="Grid/Roads/Large/road17bis"]
+[editable path="Grid/Roads/Large/road17bisbis"]
+[editable path="Grid/Roads/Medium/road1"]
+[editable path="Grid/Roads/Medium/road2"]
+[editable path="Grid/Roads/Medium/road3"]
+[editable path="Grid/Roads/Medium/road3bis"]
+[editable path="Grid/Roads/Medium/road4"]
+[editable path="Grid/Roads/Medium/road5"]
+[editable path="Grid/Roads/Medium/road6"]
+[editable path="Grid/Roads/Medium/road6bis"]
+[editable path="Grid/Roads/Medium/road6bisbis"]
+[editable path="Grid/Roads/Medium/road7"]
+[editable path="Grid/Roads/Medium/road7bis"]
+[editable path="Grid/Roads/Medium/road7bisbis"]
+[editable path="Grid/Roads/Pavements/pavement1-3"]
+[editable path="Grid/Roads/Pavements/pavement1-4"]
+[editable path="Grid/Roads/Pavements/pavement1-5"]
+[editable path="Grid/Roads/Pavements/pavement1-10"]
+[editable path="Grid/Roads/Pavements/pavementCorner(2)1-5"]
+[editable path="Grid/Roads/Pavements/pavementCorner(3)1-5"]
+[editable path="Grid/Roads/Pavements/pavementCorner1-5"]
+[editable path="Grid/Roads/Pavements/pavementCorner1-10"]
+[editable path="Grid/Roads/Pavements/pavementCornerCircle(3)1-10"]

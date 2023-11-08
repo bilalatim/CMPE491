@@ -1,0 +1,181 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl5u00ohmjlbp"]
+
+[ext_resource type="PackedScene" uid="uid://1uwkooa4x2rb" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab.tscn" id="1_3qffo"]
+[ext_resource type="PackedScene" uid="uid://bvxro2ltodmj6" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_3x2.prefab.tscn" id="2_2fbm1"]
+[ext_resource type="PackedScene" uid="uid://h7huggi7r7a3" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab.tscn" id="3_ost1g"]
+
+[node name="building18_Var1" instance=ExtResource("1_3qffo")]
+
+[node name="Windows" type="Node3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.708241, 2.70519, -13.4168)
+
+[node name="window3_3x2" parent="Windows" index="0" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20824, 3.29481, 25.9168)
+
+[node name="window3_3x2 (1)" parent="Windows" index="1" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20824, 23.2948, 25.9168)
+
+[node name="window3_3x2 (2)" parent="Windows" index="2" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20824, 8.29481, 25.9168)
+
+[node name="window3_3x2 (3)" parent="Windows" index="3" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20824, 13.2948, 25.9168)
+
+[node name="window3_3x2 (4)" parent="Windows" index="4" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20824, 18.2948, 25.9168)
+
+[node name="window3_3x2 (5)" parent="Windows" index="5" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 3.29481, 22.9168)
+
+[node name="window3_3x2 (6)" parent="Windows" index="6" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 22.9168)
+
+[node name="window3_3x2 (7)" parent="Windows" index="7" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 22.9168)
+
+[node name="window3_3x2 (8)" parent="Windows" index="8" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 22.9168)
+
+[node name="window3_3x2 (9)" parent="Windows" index="9" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 22.9168)
+
+[node name="window3_3x2 (10)" parent="Windows" index="10" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 3.29481, 10.9168)
+
+[node name="window3_3x2 (11)" parent="Windows" index="11" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 10.9168)
+
+[node name="window3_3x2 (12)" parent="Windows" index="12" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 10.9168)
+
+[node name="window3_3x2 (13)" parent="Windows" index="13" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 10.9168)
+
+[node name="window3_3x2 (14)" parent="Windows" index="14" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 10.9168)
+
+[node name="window3_3x2 (15)" parent="Windows" index="15" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 3.29481, 18.9168)
+
+[node name="window3_3x2 (16)" parent="Windows" index="16" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 18.9168)
+
+[node name="window3_3x2 (17)" parent="Windows" index="17" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 18.9168)
+
+[node name="window3_3x2 (18)" parent="Windows" index="18" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 18.9168)
+
+[node name="window3_3x2 (19)" parent="Windows" index="19" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 18.9168)
+
+[node name="window3_3x2 (20)" parent="Windows" index="20" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 3.29481, 14.9168)
+
+[node name="window3_3x2 (21)" parent="Windows" index="21" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 14.9168)
+
+[node name="window3_3x2 (22)" parent="Windows" index="22" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 14.9168)
+
+[node name="window3_3x2 (23)" parent="Windows" index="23" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 14.9168)
+
+[node name="window3_3x2 (24)" parent="Windows" index="24" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 14.9168)
+
+[node name="window3_3x2 (25)" parent="Windows" index="25" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 2.91676)
+
+[node name="window3_3x2 (26)" parent="Windows" index="26" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 2.91676)
+
+[node name="window3_3x2 (27)" parent="Windows" index="27" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 2.91676)
+
+[node name="window3_3x2 (28)" parent="Windows" index="28" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 2.91676)
+
+[node name="window3_3x2 (29)" parent="Windows" index="29" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 23.2948, 6.91676)
+
+[node name="window3_3x2 (30)" parent="Windows" index="30" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 8.29481, 6.91676)
+
+[node name="window3_3x2 (31)" parent="Windows" index="31" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 13.2948, 6.91676)
+
+[node name="window3_3x2 (32)" parent="Windows" index="32" instance=ExtResource("2_2fbm1")]
+transform = Transform3D(9.53674e-07, 0, -1, 0, 1, 0, 1, 0, 9.53674e-07, -1.79176, 18.2948, 6.91676)
+
+[node name="door2_4x5" parent="." index="2" instance=ExtResource("3_ost1g")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -2.57, 2, -10)
+
+[editable path="Windows/window3_3x2"]
+[editable path="Windows/window3_3x2/window3_3x2"]
+[editable path="Windows/window3_3x2 (1)"]
+[editable path="Windows/window3_3x2 (1)/window3_3x2"]
+[editable path="Windows/window3_3x2 (2)"]
+[editable path="Windows/window3_3x2 (2)/window3_3x2"]
+[editable path="Windows/window3_3x2 (3)"]
+[editable path="Windows/window3_3x2 (3)/window3_3x2"]
+[editable path="Windows/window3_3x2 (4)"]
+[editable path="Windows/window3_3x2 (4)/window3_3x2"]
+[editable path="Windows/window3_3x2 (5)"]
+[editable path="Windows/window3_3x2 (5)/window3_3x2"]
+[editable path="Windows/window3_3x2 (6)"]
+[editable path="Windows/window3_3x2 (6)/window3_3x2"]
+[editable path="Windows/window3_3x2 (7)"]
+[editable path="Windows/window3_3x2 (7)/window3_3x2"]
+[editable path="Windows/window3_3x2 (8)"]
+[editable path="Windows/window3_3x2 (8)/window3_3x2"]
+[editable path="Windows/window3_3x2 (9)"]
+[editable path="Windows/window3_3x2 (9)/window3_3x2"]
+[editable path="Windows/window3_3x2 (10)"]
+[editable path="Windows/window3_3x2 (10)/window3_3x2"]
+[editable path="Windows/window3_3x2 (11)"]
+[editable path="Windows/window3_3x2 (11)/window3_3x2"]
+[editable path="Windows/window3_3x2 (12)"]
+[editable path="Windows/window3_3x2 (12)/window3_3x2"]
+[editable path="Windows/window3_3x2 (13)"]
+[editable path="Windows/window3_3x2 (13)/window3_3x2"]
+[editable path="Windows/window3_3x2 (14)"]
+[editable path="Windows/window3_3x2 (14)/window3_3x2"]
+[editable path="Windows/window3_3x2 (15)"]
+[editable path="Windows/window3_3x2 (15)/window3_3x2"]
+[editable path="Windows/window3_3x2 (16)"]
+[editable path="Windows/window3_3x2 (16)/window3_3x2"]
+[editable path="Windows/window3_3x2 (17)"]
+[editable path="Windows/window3_3x2 (17)/window3_3x2"]
+[editable path="Windows/window3_3x2 (18)"]
+[editable path="Windows/window3_3x2 (18)/window3_3x2"]
+[editable path="Windows/window3_3x2 (19)"]
+[editable path="Windows/window3_3x2 (19)/window3_3x2"]
+[editable path="Windows/window3_3x2 (20)"]
+[editable path="Windows/window3_3x2 (20)/window3_3x2"]
+[editable path="Windows/window3_3x2 (21)"]
+[editable path="Windows/window3_3x2 (21)/window3_3x2"]
+[editable path="Windows/window3_3x2 (22)"]
+[editable path="Windows/window3_3x2 (22)/window3_3x2"]
+[editable path="Windows/window3_3x2 (23)"]
+[editable path="Windows/window3_3x2 (23)/window3_3x2"]
+[editable path="Windows/window3_3x2 (24)"]
+[editable path="Windows/window3_3x2 (24)/window3_3x2"]
+[editable path="Windows/window3_3x2 (25)"]
+[editable path="Windows/window3_3x2 (25)/window3_3x2"]
+[editable path="Windows/window3_3x2 (26)"]
+[editable path="Windows/window3_3x2 (26)/window3_3x2"]
+[editable path="Windows/window3_3x2 (27)"]
+[editable path="Windows/window3_3x2 (27)/window3_3x2"]
+[editable path="Windows/window3_3x2 (28)"]
+[editable path="Windows/window3_3x2 (28)/window3_3x2"]
+[editable path="Windows/window3_3x2 (29)"]
+[editable path="Windows/window3_3x2 (29)/window3_3x2"]
+[editable path="Windows/window3_3x2 (30)"]
+[editable path="Windows/window3_3x2 (30)/window3_3x2"]
+[editable path="Windows/window3_3x2 (31)"]
+[editable path="Windows/window3_3x2 (31)/window3_3x2"]
+[editable path="Windows/window3_3x2 (32)"]
+[editable path="Windows/window3_3x2 (32)/window3_3x2"]
+[editable path="door2_4x5"]
+[editable path="door2_4x5/door2_4x5"]

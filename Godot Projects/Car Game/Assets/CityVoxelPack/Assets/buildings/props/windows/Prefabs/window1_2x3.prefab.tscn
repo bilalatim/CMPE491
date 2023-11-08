@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0oofwc18d5hs"]
+
+[ext_resource type="PackedScene" uid="uid://cmldeq2bx1l3l" path="res://Assets/CityVoxelPack/Assets/buildings/props/windows/Meshes/window1_2x3.obj" id="1_av81n"]
+
+[node name="window1_2x3" type="Node3D"]
+
+[node name="window1_2x3" parent="." instance=ExtResource("1_av81n")]
+
+[editable path="window1_2x3"]

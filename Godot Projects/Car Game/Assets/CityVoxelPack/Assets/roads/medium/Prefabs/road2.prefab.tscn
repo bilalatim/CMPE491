@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1fistmrcyj8n"]
+
+[ext_resource type="ArrayMesh" uid="uid://cw7bidegchbcu" path="res://Assets/CityVoxelPack/Assets/roads/medium/Mesh/road2.road2.mesh" id="1_4ailx"]
+[ext_resource type="Material" uid="uid://jya27ft4habw" path="res://Assets/CityVoxelPack/Assets/roads/Materials/roads.mat.tres" id="2_op3c5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ln6rf"]
+size = Vector3(37.2571, 2, 37.2526)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_er7hr"]
+size = Vector3(17.0854, 3.39259, 17)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i5joj"]
+size = Vector3(36.9515, 4.22448, 2.1743)
+
+[node name="road2" type="Node3D"]
+
+[node name="road2" type="StaticBody3D" parent="."]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="road2"]
+editor_description = "[MeshRenderer 23::5d01fbd589c6eb542ba764e2ba5d07a4:7143635267036249322]"
+mesh = ExtResource("1_4ailx")
+surface_material_override/0 = ExtResource("2_op3c5")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 5661114113287017396, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "12b5ac9ff0218cb439a67cd4aff91cdb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StitchLightmapSeams": 1
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="road2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46068, 0, 5.40778)
+shape = SubResource("BoxShape3D_ln6rf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="road2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.645, 1, 15.4883)
+shape = SubResource("BoxShape3D_er7hr")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="road2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62834, 0.889362, -13)
+shape = SubResource("BoxShape3D_i5joj")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="road2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12.9002, 0.88936, 5.58408)
+shape = SubResource("BoxShape3D_i5joj")

@@ -1,0 +1,96 @@
+[gd_scene load_steps=9 format=3 uid="uid://dbchd6q5tef4t"]
+
+[ext_resource type="ArrayMesh" uid="uid://dyurhwnsemb74" path="res://Assets/CityVoxelPack/Assets/roads/tall/Mesh/road12bis.road12bis.mesh" id="1_k3hss"]
+[ext_resource type="Material" uid="uid://jya27ft4habw" path="res://Assets/CityVoxelPack/Assets/roads/Materials/roads.mat.tres" id="2_n57ln"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6kqy7"]
+size = Vector3(72.9788, 2, 60.1172)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lt3ye"]
+size = Vector3(15, 5.43799, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n2jnw"]
+size = Vector3(20, 5, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f6gqe"]
+size = Vector3(1.34052, 2.98726, 19.6319)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w2155"]
+size = Vector3(36.5628, 3.24916, 1.10124)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3t1a4"]
+size = Vector3(59.5499, 3.12084, 1.2268)
+
+[node name="road12bis" type="Node3D"]
+
+[node name="road12bis" type="StaticBody3D" parent="."]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="road12bis"]
+editor_description = "[MeshRenderer 23::70d9e664f8744574ab6b0493d8f2262d:8290040171669594149]"
+mesh = ExtResource("1_k3hss")
+surface_material_override/0 = ExtResource("2_n57ln")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 7955137376364162346, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "12b5ac9ff0218cb439a67cd4aff91cdb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StitchLightmapSeams": 1
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02375, 0, 7.44312)
+shape = SubResource("BoxShape3D_6kqy7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1234, 0, 27.6952)
+shape = SubResource("BoxShape3D_lt3ye")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1234, 0, -11.3048)
+shape = SubResource("BoxShape3D_lt3ye")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.3916, 0, 27.4157)
+shape = SubResource("BoxShape3D_n2jnw")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.96651, 1.21318, 27.4455)
+shape = SubResource("BoxShape3D_f6gqe")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2785, 1, -1.97917)
+shape = SubResource("BoxShape3D_w2155")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="road12bis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.60951, 1, -21.8685)
+shape = SubResource("BoxShape3D_3t1a4")

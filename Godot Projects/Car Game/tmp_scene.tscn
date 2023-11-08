@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://obdam7v0omw1"]
+
+[ext_resource type="ArrayMesh" uid="uid://bno5ru1ew2b5i" path="res://Assets/CartoonTracksPack1/Track1/Meshes/Prefab_Meshes/prop_banner_www_A.prop_banner_long_B.mesh" id="1_ll8uk"]
+[ext_resource type="Animation" uid="uid://d5vkihvif7op" path="res://Assets/CartoonTracksPack1/Track1/Meshes/Prefab_Meshes/prop_banner_www_A.Take 001.tres" id="2_cuw8v"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cs7kb"]
+_data = {
+"Take 001": ExtResource("2_cuw8v")
+}
+
+[node name="prop_banner_www_A" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, 0, 0)
+
+[node name="prop_banner_long_B" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ll8uk")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cs7kb")
+}
