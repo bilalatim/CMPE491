@@ -1,0 +1,368 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgp71jxm5w750"]
+
+[ext_resource type="Material" uid="uid://cdn52l1s5trvg" path="res://Assets/Obstacles.mat.tres" id="1_e8v23"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y6tm5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ltynf"]
+resource_name = "Cube"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5x40o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_44nma"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qjanp"]
+
+[node name="Obstacles" type="Node3D"]
+
+[node name="Obstacle" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -0.28, 1, 1.18)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Obstacle"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle/BoxCollider"]
+shape = SubResource("BoxShape3D_y6tm5")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Obstacle"]
+editor_description = "[MeshRenderer 23::a917e933ca1a0804abb305caaf878724:928797013829516797]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("1_e8v23")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797013829516799, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 1,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
+
+[node name="NavMeshObstacle" type="Node" parent="Obstacle"]
+metadata/unidot_keys = {
+"m_Carve": 1,
+"m_CarveOnlyStationary": 0,
+"m_Center": Vector3(0, 0, 0),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_Extents": Vector3(0.5, 0.5, 0.5),
+"m_GameObject": [null, 928797013829516799, null, null],
+"m_MoveThreshold": 0.1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Shape": 1,
+"m_TimeToStationary": 0.5,
+"serializedVersion": 3
+}
+
+[node name="MonoBehaviour" type="Node" parent="Obstacle"]
+editor_description = "[MonoBehaviour 114::a917e933ca1a0804abb305caaf878724:928797013829516785]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797013829516799, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "974c55d9ebac30b429a1413d331873d9", 3],
+"speed": 0.2,
+"strength": 9
+}
+
+[node name="Obstacle (1)" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -0.28, 1, 7.18)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Obstacle (1)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle (1)/BoxCollider"]
+shape = SubResource("BoxShape3D_5x40o")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Obstacle (1)"]
+editor_description = "[MeshRenderer 23::a917e933ca1a0804abb305caaf878724:928797014486805903]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("1_e8v23")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797014486805896, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 1,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
+
+[node name="NavMeshObstacle" type="Node" parent="Obstacle (1)"]
+metadata/unidot_keys = {
+"m_Carve": 1,
+"m_CarveOnlyStationary": 0,
+"m_Center": Vector3(0, 0, 0),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_Extents": Vector3(0.5, 0.5, 0.5),
+"m_GameObject": [null, 928797014486805896, null, null],
+"m_MoveThreshold": 0.1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Shape": 1,
+"m_TimeToStationary": 0.5,
+"serializedVersion": 3
+}
+
+[node name="MonoBehaviour" type="Node" parent="Obstacle (1)"]
+editor_description = "[MonoBehaviour 114::a917e933ca1a0804abb305caaf878724:928797014486805897]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797014486805896, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "974c55d9ebac30b429a1413d331873d9", 3],
+"speed": 0.2,
+"strength": 9
+}
+
+[node name="Obstacle (2)" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -0.28, 1, -2.82)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Obstacle (2)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle (2)/BoxCollider"]
+shape = SubResource("BoxShape3D_44nma")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Obstacle (2)"]
+editor_description = "[MeshRenderer 23::a917e933ca1a0804abb305caaf878724:928797015415587440]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("1_e8v23")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797015415587453, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 1,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
+
+[node name="NavMeshObstacle" type="Node" parent="Obstacle (2)"]
+metadata/unidot_keys = {
+"m_Carve": 1,
+"m_CarveOnlyStationary": 0,
+"m_Center": Vector3(0, 0, 0),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_Extents": Vector3(0.5, 0.5, 0.5),
+"m_GameObject": [null, 928797015415587453, null, null],
+"m_MoveThreshold": 0.1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Shape": 1,
+"m_TimeToStationary": 0.5,
+"serializedVersion": 3
+}
+
+[node name="MonoBehaviour" type="Node" parent="Obstacle (2)"]
+editor_description = "[MonoBehaviour 114::a917e933ca1a0804abb305caaf878724:928797015415587442]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797015415587453, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "974c55d9ebac30b429a1413d331873d9", 3],
+"speed": 0.2,
+"strength": 9
+}
+
+[node name="Obstacle (3)" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -0.28, 1, -7.82)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Obstacle (3)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle (3)/BoxCollider"]
+shape = SubResource("BoxShape3D_qjanp")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Obstacle (3)"]
+editor_description = "[MeshRenderer 23::a917e933ca1a0804abb305caaf878724:928797013678340702]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("1_e8v23")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797013678340699, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 1,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
+
+[node name="NavMeshObstacle" type="Node" parent="Obstacle (3)"]
+metadata/unidot_keys = {
+"m_Carve": 1,
+"m_CarveOnlyStationary": 0,
+"m_Center": Vector3(0, 0, 0),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_Extents": Vector3(0.5, 0.5, 0.5),
+"m_GameObject": [null, 928797013678340699, null, null],
+"m_MoveThreshold": 0.1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Shape": 1,
+"m_TimeToStationary": 0.5,
+"serializedVersion": 3
+}
+
+[node name="MonoBehaviour" type="Node" parent="Obstacle (3)"]
+editor_description = "[MonoBehaviour 114::a917e933ca1a0804abb305caaf878724:928797013678340696]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797013678340699, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "974c55d9ebac30b429a1413d331873d9", 3],
+"speed": 0.2,
+"strength": 9
+}

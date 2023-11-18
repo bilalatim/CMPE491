@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c6611nvawhobg"]
+
+[node name="Link" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.56, 0)
+
+[node name="MonoBehaviour" type="Node" parent="."]
+editor_description = "[MonoBehaviour 114::bc3a8664e231714438240d17924bc360:3875748923701835010]"
+metadata/unidot_keys = {
+"m_AgentTypeID": 0,
+"m_Area": 0,
+"m_AutoUpdatePosition": 0,
+"m_Bidirectional": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CostModifier": -1,
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_EndPoint": Vector3(0, 0, 2.5),
+"m_GameObject": [null, 3875748923701835021, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "fd3f0c8df3e6f2f41a45b75127c00b31", 3],
+"m_StartPoint": Vector3(0, 0, -2.5),
+"m_Width": 20
+}

@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgiy752ge1jdy"]
+
+[ext_resource type="PackedScene" uid="uid://bxxaufmkivlow" path="res://Assets/NavMeshDemo/LowMan/Models/LowBody.gltf" id="1_lx5c5"]
+[ext_resource type="AnimationLibrary" uid="uid://timnb2bse3v5" path="res://Assets/NavMeshDemo/LowMan/Animation/Humanoid.library.tres" id="2_3gyg3"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q4r3p"]
+radius = 0.4
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0hhjx"]
+resource_name = "MazeLowMan"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.906332, 0.906332, 1)
+metallic = 0.4
+roughness = 0.707107
+
+[node name="Player" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3, 0.52, -4.94)
+freeze_mode = 1
+
+[node name="CapsuleCollider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_q4r3p")
+
+[node name="LowBody" parent="." instance=ExtResource("1_lx5c5")]
+transform = Transform3D(1.2, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="GeneralSkeleton" parent="LowBody" index="0"]
+bones/1/position = Vector3(-0.0238351, 0.9216, 0.0576885)
+bones/1/rotation = Quaternion(0.0107296, -0.996952, 0.0768494, 0.00812492)
+bones/2/rotation = Quaternion(0.0315985, 0.127288, 0.990241, -0.0471359)
+bones/3/rotation = Quaternion(0.00469084, 0.986446, -0.127505, 0.103168)
+bones/4/rotation = Quaternion(-0.0491834, 0.678509, -0.732795, -0.0147728)
+bones/5/rotation = Quaternion(0.00160174, 0.999992, -0.00347725, -0.000764071)
+bones/6/rotation = Quaternion(0.00520015, 0.0955508, 0.994871, 0.0327815)
+bones/7/rotation = Quaternion(-0.010696, 0.990556, -0.0810919, -0.110039)
+bones/8/rotation = Quaternion(0.0355944, 0.690281, -0.722656, -0.0036056)
+bones/9/rotation = Quaternion(-0.00647378, 0.999975, -0.00268969, 0.00105243)
+bones/10/rotation = Quaternion(-0.0599238, 0.00775364, 0.0195555, 0.997981)
+bones/11/rotation = Quaternion(-0.00528743, 0.00671342, -0.00410306, 0.999955)
+bones/13/rotation = Quaternion(0.637255, 0.341315, 0.536588, -0.435297)
+bones/14/rotation = Quaternion(0.133232, 0.863622, -0.48301, -0.05575)
+bones/15/rotation = Quaternion(0.0796387, -0.391245, 0.0871183, 0.912686)
+bones/16/rotation = Quaternion(-0.0239375, 0.704056, 0.0755961, 0.705704)
+bones/17/rotation = Quaternion(-0.162927, 0.669542, 0.372631, 0.621542)
+bones/18/rotation = Quaternion(0.554496, -0.0296556, 0.0239004, 0.831315)
+bones/19/rotation = Quaternion(0.595888, -0.0247614, 0.0110471, 0.80261)
+bones/20/rotation = Quaternion(0.599546, -0.367947, -0.572261, -0.421517)
+bones/21/rotation = Quaternion(-0.0034664, 0.872828, -0.487672, 0.0183126)
+bones/22/rotation = Quaternion(0.116464, 0.495291, -0.142241, 0.849053)
+bones/23/rotation = Quaternion(0.0232362, -0.664339, -0.0425987, 0.745854)
+bones/24/rotation = Quaternion(-0.162926, -0.669542, -0.37263, 0.621543)
+bones/25/rotation = Quaternion(0.554496, 0.0296558, -0.0238985, 0.831314)
+bones/26/rotation = Quaternion(0.595888, 0.0247614, -0.0110452, 0.80261)
+bones/27/rotation = Quaternion(0.0684783, 0.0194077, -0.021147, 0.99724)
+bones/28/rotation = Quaternion(-0.0487502, -0.0646071, 0.0167607, 0.996579)
+
+[node name="LowMan" parent="LowBody/GeneralSkeleton" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0hhjx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LowBody/GeneralSkeleton" index="1"]
+libraries = {
+"Humanoid.library": ExtResource("2_3gyg3")
+}
+
+[editable path="LowBody"]

@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://8phjd5kpkoyc"]
+
+[ext_resource type="PackedScene" uid="uid://cf28r2n7p88h2" path="res://Assets/NavMeshExamples/Example01 - Basics/Level.gltf" id="1_7tsp7"]
+[ext_resource type="Material" uid="uid://cdn52l1s5trvg" path="res://Assets/Obstacles.mat.tres" id="2_08v04"]
+[ext_resource type="Material" uid="uid://d2xb5cn12j4ps" path="res://Assets/Walls.mat.tres" id="3_s438j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qdrgw"]
+size = Vector3(22, 1.32, 22)
+
+[node name="Level Variant" instance=ExtResource("1_7tsp7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Walls" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_08v04")
+
+[node name="MonoBehaviour" type="Node" parent="Walls" index="0"]
+editor_description = "[MonoBehaviour 114::21c3194d0a908814bbf7454d2d2e13d4:1379624014]"
+metadata/unidot_keys = {
+"m_AffectedAgents": "ffffffff",
+"m_Area": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 6552243119489079262, null, null],
+"m_IgnoreFromBuild": 0,
+"m_ObjectHideFlags": 0,
+"m_OverrideArea": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "6d07ce676d7afda4dabb3b0f7dd5e654", 3]
+}
+
+[node name="Ground" parent="." index="1"]
+surface_material_override/0 = ExtResource("3_s438j")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Ground" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/BoxCollider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44, 0)
+shape = SubResource("BoxShape3D_qdrgw")

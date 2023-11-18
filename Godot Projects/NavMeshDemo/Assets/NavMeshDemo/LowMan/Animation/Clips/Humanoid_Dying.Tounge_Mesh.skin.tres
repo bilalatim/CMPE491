@@ -1,0 +1,11 @@
+[gd_resource type="Skin" format=3 uid="uid://c4kw7erdv4ndm"]
+
+[resource]
+resource_name = "Skin4"
+bind_count = 2
+bind/0/name = &"TongueTip"
+bind/0/bone = -1
+bind/0/pose = Transform3D(-0.997822, -0.0590642, 0.0293619, 0.0399904, -0.187715, 0.981409, -0.0524544, 0.980446, 0.189668, 0.0902386, 0.249777, -1.52615)
+bind/1/name = &"TongueBack"
+bind/1/bone = -1
+bind/1/pose = Transform3D(-0.997822, -0.0590642, 0.0293619, 0.0399904, -0.187715, 0.981409, -0.0524544, 0.980446, 0.189668, 0.0910916, 0.277556, -1.5212)

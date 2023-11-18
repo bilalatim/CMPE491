@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cxmbhnq1ykcrp"]
+
+[node name="NavMesh" type="Node3D"]
+
+[node name="MonoBehaviour" type="Node" parent="."]
+editor_description = "[MonoBehaviour 114::6f25f168f7fbe42488b6a303c26990cb:4669736641450822156]"
+metadata/unidot_keys = {
+"m_AgentTypeID": 0,
+"m_BuildHeightMesh": 0,
+"m_Center": Vector3(0, 2, 0),
+"m_CollectObjects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DefaultArea": 0,
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 4669736641450822163, null, null],
+"m_IgnoreNavMeshAgent": 1,
+"m_IgnoreNavMeshObstacle": 1,
+"m_LayerMask": {
+"m_Bits": 4294967039,
+"serializedVersion": 2
+},
+"m_NavMeshData": [null, 23800000, "26a08ae9af51c864aaeaeaeb2d6ebddc", 2],
+"m_ObjectHideFlags": 0,
+"m_OverrideTileSize": 0,
+"m_OverrideVoxelSize": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "3df27b9289d1e8c4fb82e0df4f4673ba", 3],
+"m_Size": Vector3(10, 10, 10),
+"m_TileSize": 256,
+"m_UseGeometry": 0,
+"m_VoxelSize": 0.166667
+}

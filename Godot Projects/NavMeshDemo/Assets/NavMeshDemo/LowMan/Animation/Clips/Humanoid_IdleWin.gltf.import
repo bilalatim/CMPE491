@@ -1,0 +1,61 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://tb4gyrts7fju"
+path="res://.godot/imported/Humanoid_IdleWin.gltf-5a80da189848ac2d9d8443d43b8b8d32.scn"
+
+[deps]
+
+source_file="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_IdleWin.gltf"
+dest_files=["res://.godot/imported/Humanoid_IdleWin.gltf-5a80da189848ac2d9d8443d43b8b8d32.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=false
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"animations": {
+"Take 001": {
+"settings/loop_mode": 1,
+"slice_1/end_frame": 96.96,
+"slice_1/loop_mode": 1,
+"slice_1/name": "WinPose",
+"slice_1/save_to_file/enabled": true,
+"slice_1/save_to_file/keep_custom_tracks": true,
+"slice_1/save_to_file/path": "res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_IdleWin.animation.tres",
+"slice_1/start_frame": -1,
+"slices/amount": 1
+}
+},
+"materials": {},
+"meshes": {},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+},
+"PATH:Skeleton3D": {
+"retarget/bone_map": Object(BoneMap,"resource_local_to_scene":false,"resource_name":"","profile":Object(SkeletonProfileHumanoid,"resource_local_to_scene":false,"resource_name":"","root_bone":&"Root","scale_base_bone":&"Hips","group_size":4,"bone_size":56,"script":null)
+,"bonemap":null,"bone_map/Root":&"char_LowMan_Reference","bone_map/Hips":&"char_LowMan_Hips","bone_map/Spine":&"char_LowMan_Spine","bone_map/Chest":&"char_LowMan_Spine1","bone_map/UpperChest":&"","bone_map/Neck":&"char_LowMan_Neck","bone_map/Head":&"char_LowMan_Head","bone_map/LeftEye":&"","bone_map/RightEye":&"","bone_map/Jaw":&"","bone_map/LeftShoulder":&"char_LowMan_LeftShoulder","bone_map/LeftUpperArm":&"char_LowMan_LeftArm","bone_map/LeftLowerArm":&"char_LowMan_LeftForeArm","bone_map/LeftHand":&"char_LowMan_LeftHand","bone_map/LeftThumbMetacarpal":&"char_LowMan_LeftHandThumb1","bone_map/LeftThumbProximal":&"char_LowMan_LeftHandThumb2","bone_map/LeftThumbDistal":&"","bone_map/LeftIndexProximal":&"","bone_map/LeftIndexIntermediate":&"","bone_map/LeftIndexDistal":&"","bone_map/LeftMiddleProximal":&"char_LowMan_LeftHandMiddle1","bone_map/LeftMiddleIntermediate":&"char_LowMan_LeftHandMiddle2","bone_map/LeftMiddleDistal":&"","bone_map/LeftRingProximal":&"","bone_map/LeftRingIntermediate":&"","bone_map/LeftRingDistal":&"","bone_map/LeftLittleProximal":&"","bone_map/LeftLittleIntermediate":&"","bone_map/LeftLittleDistal":&"","bone_map/RightShoulder":&"char_LowMan_RightShoulder","bone_map/RightUpperArm":&"char_LowMan_RightArm","bone_map/RightLowerArm":&"char_LowMan_RightForeArm","bone_map/RightHand":&"char_LowMan_RightHand","bone_map/RightThumbMetacarpal":&"char_LowMan_RightHandThumb1","bone_map/RightThumbProximal":&"char_LowMan_RightHandThumb2","bone_map/RightThumbDistal":&"","bone_map/RightIndexProximal":&"","bone_map/RightIndexIntermediate":&"","bone_map/RightIndexDistal":&"","bone_map/RightMiddleProximal":&"char_LowMan_RightHandMiddle1","bone_map/RightMiddleIntermediate":&"char_LowMan_RightHandMiddle2","bone_map/RightMiddleDistal":&"","bone_map/RightRingProximal":&"","bone_map/RightRingIntermediate":&"","bone_map/RightRingDistal":&"","bone_map/RightLittleProximal":&"","bone_map/RightLittleIntermediate":&"","bone_map/RightLittleDistal":&"","bone_map/LeftUpperLeg":&"char_LowMan_LeftUpLeg","bone_map/LeftLowerLeg":&"char_LowMan_LeftLeg","bone_map/LeftFoot":&"char_LowMan_LeftFoot","bone_map/LeftToes":&"char_LowMan_LeftToeBase","bone_map/RightUpperLeg":&"char_LowMan_RightUpLeg","bone_map/RightLowerLeg":&"char_LowMan_RightLeg","bone_map/RightFoot":&"char_LowMan_RightFoot","bone_map/RightToes":&"char_LowMan_RightToeBase","script":null)
+,
+"retarget/rest_fixer/fix_silhouette/enable": false
+}
+}
+}
+gltf/embedded_image_handling=1
