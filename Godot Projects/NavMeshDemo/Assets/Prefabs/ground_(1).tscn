@@ -1,0 +1,1847 @@
+[gd_scene load_steps=39 format=3 uid="uid://b1g2v757ylmos"]
+
+[ext_resource type="ArrayMesh" uid="uid://dvwsybu2ncwrj" path="res://Assets/NavMeshExamples/Example01 - Basics/Level.Ground.mesh" id="1_y6kkh"]
+[ext_resource type="Material" uid="uid://d2xb5cn12j4ps" path="res://Assets/Walls.mat.tres" id="2_ko1fg"]
+[ext_resource type="Material" uid="uid://cdn52l1s5trvg" path="res://Assets/Obstacles.mat.tres" id="3_e5lah"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_8s0kw"]
+vertices = PackedVector3Array(-0.25, 1.37259, -0.5, -1.75, 1.37259, -0.25, -1.75, 1.37259, 0.75, 3.25, 1.87259, 0.75, 2.08333, 1.37259, 0.333333, 2, 1.37259, 0.75, 0, 1.37259, -10.5, -1, 1.37259, -9.5, 8.25, 1.37259, -9.25, 10.5, 1.37259, -10.5, 3.25, 1.87259, 0.75, 3.25, 1.87259, 1.75, 10.5, 1.37259, 1.75, 6.15, 2.62259, 1.15, 4.7, 2.37259, 1.75, 7.6, 2.37259, 1.75, -0.25, 1.37259, -6.25, -0.25, 1.37259, -0.5, 3.25, 1.87259, 0.75, 10.5, 1.37259, 1.75, 10.5, 1.37259, -4.5, 8, 1.37259, -6.25, 2.08333, 1.37259, 0.333333, 6.15, 2.62259, 1.15, 5.49023, 2.37259, -0.516245, 5.5051, 1.37259, -3.4871, 3.98016, 1.87259, -1.98217, 8.51025, 2.12259, -0.49427, 2.49514, 1.37259, -1.99315, 10.5, 1.37259, -10.5, 8.25, 1.37259, -9.25, 8, 1.37259, -6.25, 10.5, 1.37259, -4.5, -10.5, 1.37259, -10.5, -10.5, 1.37259, -9.5, -1, 1.37259, -9.5, 0, 1.37259, -10.5, -10.5, 2.37259, -8.5, -10.5, 2.37259, -7.25, -9.5, 2.37259, -7.25, -9.5, 2.37259, -8.5, -8.5, 3.37259, -8.5, -8.5, 3.37259, -7.25, -7.5, 3.37259, -7.25, -7.5, 3.37259, -8.5, -6.5, 4.37259, -8.5, -6.5, 4.37259, -7.25, -5.5, 4.37259, -7.25, -5.5, 4.37259, -8.5, -4.25, 5.37259, -7, -1.5, 5.37259, -7.25, -1.5, 5.37259, -8.5, -4.5, 5.37259, -8.5, -4.5, 1.62259, -2, -4.25, 1.62259, -2, -4.25, 5.37259, -7, -4.5, 5.37259, -8.5, -4.5, 5.37259, -7.2, -4.5, 4.62259, -5.9, 1.75, 3.37259, -8.5, 1.75, 3.37259, -7.25, 5, 3.37259, -7.25, 5, 3.37259, -8.5, 6, 2.37259, -8.5, 6, 2.37259, -7.25, 7.25, 2.37259, -7.25, 7.25, 2.37259, -8.5, -8.25, 1.37259, -8.25, -8.25, 1.37259, -7.5, -7.5, 1.37259, -7.5, -7.5, 1.37259, -8.25, -6.25, 1.37259, -8.25, -6.25, 1.37259, -7.5, -5.5, 1.37259, -7.5, -5.5, 1.37259, -8.25, -4.25, 1.37259, -8.25, -4.25, 1.37259, -7.5, -3.5, 1.37259, -7.5, -3.5, 1.37259, -8.25, -2.25, 1.37259, -8.25, -2.25, 1.37259, -7.5, -1.5, 1.37259, -7.5, -1.5, 1.37259, -8.25, -6.25, 1.37259, 1.25, -5.75, 1.62259, 1.25, -5.75, 1.37259, 0.75, -1.75, 1.37259, 0.75, -1.75, 1.37259, -0.25, -3.25, 1.37259, -0.25, -5.75, 1.37259, 0.75, -3.25, 1.37259, -0.25, -3.5, 1.37259, -2, -4.25, 1.62259, -2, -3.25, 1.37259, -0.25, -4.25, 1.62259, -2, -4.5, 1.62259, -2, -5.5, 1.37259, -5.75, -3.5, 1.37259, -6.25, -10.5, 1.37259, -6.25, -3.25, 1.37259, -0.25, -4.5, 1.62259, -2, -5.5, 1.37259, -2, -5.75, 1.37259, 0.75, -5.5, 1.37259, -2, -5.5, 1.37259, -5.75, -10.5, 1.37259, -6.25, -10.5, 1.37259, 2, -9, 1.37259, 1.25, -9, 1.37259, 1.25, -6.25, 1.37259, 1.25, -5.75, 1.37259, 0.75, -5.5, 1.37259, -2, -10.5, 1.37259, 2, -10.5, 1.37259, 10.5, -8.75, 1.37259, 10.5, -9, 1.37259, 1.25, -2.5, 4.37259, -6.25, -2.5, 4.37259, -5.25, -1.5, 4.37259, -5.25, -1.5, 4.37259, -6.25, -2.25, 1.37259, -6.25, -2.25, 1.37259, -5.5, -1.5, 1.37259, -5.5, -1.5, 1.37259, -6.25, -2.5, 3.37259, -4.25, -2.5, 3.37259, -3.25, -1.5, 3.37259, -3.25, -1.5, 3.37259, -4.25, -2.25, 1.37259, -4.25, -2.25, 1.37259, -3.5, -1.5, 1.37259, -3.5, -1.5, 1.37259, -4.25, -2.5, 2.37259, -2.25, -2.5, 2.37259, -1.25, -1.5, 2.37259, -1.25, -1.5, 2.37259, -2.25, -5.75, 1.62259, 2, -2.25, 3.62259, 1.75, -5.75, 1.62259, 1.75, -5.75, 1.62259, 1.75, -5.75, 1.62259, 1.25, -6.25, 1.37259, 1.25, -5.75, 1.62259, 2, -5.75, 1.62259, 1.75, -6.25, 1.37259, 1.25, 0.25, 1.37259, 4, 0.5, 1.37259, 4.5, 0.75, 1.37259, 3, -5.75, 1.37259, 3, -5.75, 1.62259, 2, -6.25, 1.37259, 1.25, -6.75, 1.37259, 4.25, -2.75, 1.37259, 7.25, -6.75, 1.37259, 7.5, -7, 1.37259, 10.5, -1, 1.37259, 10.5, -1.75, 1.37259, 4.25, 0.25, 1.37259, 4, 0.75, 1.37259, 3, -5.75, 1.37259, 3, -3, 1.37259, 4.25, -5.75, 1.37259, 3, -6.75, 1.37259, 4.25, -3, 1.37259, 4.25, -1, 1.37259, 10.5, -1.25, 1.37259, 7.25, -1.75, 1.37259, 7, -2.75, 1.37259, 7.25, -1.75, 1.37259, 7, -1.75, 1.37259, 4.25, -3, 1.37259, 4.25, -2.75, 1.37259, 7.25, 3.25, 1.87259, 1.75, 0, 4.62259, 1.75, 3.25, 1.87259, 2, 3.25, 1.87259, 3, 0.75, 1.37259, 3, 0.5, 1.37259, 4.5, 0.5, 1.37259, 7, 2.5625, 1.37259, 4, 0.5, 1.37259, 7, -1.25, 1.37259, 7.25, -1, 1.37259, 10.5, 3.25, 1.87259, 3, 0.5, 1.37259, 7, -1, 1.37259, 10.5, 10.5, 1.37259, 10.5, 10.5, 1.37259, 1.75, 7.6, 2.37259, 2.25, 4.7, 2.37259, 2.75, 2.5625, 1.37259, 4, 10.5, 1.37259, 1.75, 3.25, 1.87259, 1.75, 3.25, 1.87259, 2, 4.7, 2.37259, 1.95, 7.6, 2.37259, 1.85, 7.6, 2.37259, 1.75, 4.7, 2.37259, 1.75, 10.5, 1.37259, 1.75, 3.25, 1.87259, 2, 3.25, 1.87259, 3, 4.7, 2.37259, 2.75, 7.6, 2.37259, 2.25, 7.6, 2.37259, 1.85, 4.7, 2.37259, 1.95)
+polygons = [PackedInt32Array(3, 5, 4), PackedInt32Array(4, 5, 0), PackedInt32Array(0, 5, 1), PackedInt32Array(1, 5, 2), PackedInt32Array(7, 6, 8), PackedInt32Array(8, 6, 9), PackedInt32Array(11, 10, 14), PackedInt32Array(14, 10, 13), PackedInt32Array(14, 13, 15), PackedInt32Array(15, 13, 12), PackedInt32Array(20, 25, 21), PackedInt32Array(21, 25, 16), PackedInt32Array(16, 28, 17), PackedInt32Array(17, 28, 22), PackedInt32Array(22, 28, 18), PackedInt32Array(18, 24, 23), PackedInt32Array(23, 27, 19), PackedInt32Array(19, 27, 20), PackedInt32Array(20, 27, 25), PackedInt32Array(25, 28, 16), PackedInt32Array(28, 26, 18), PackedInt32Array(24, 27, 23), PackedInt32Array(18, 26, 24), PackedInt32Array(27, 24, 25), PackedInt32Array(25, 26, 28), PackedInt32Array(26, 25, 24), PackedInt32Array(30, 29, 31), PackedInt32Array(31, 29, 32), PackedInt32Array(34, 33, 35), PackedInt32Array(35, 33, 36), PackedInt32Array(40, 39, 37), PackedInt32Array(37, 39, 38), PackedInt32Array(44, 43, 41), PackedInt32Array(41, 43, 42), PackedInt32Array(48, 47, 45), PackedInt32Array(45, 47, 46), PackedInt32Array(50, 49, 51), PackedInt32Array(51, 49, 52), PackedInt32Array(56, 55, 57), PackedInt32Array(57, 55, 58), PackedInt32Array(58, 55, 53), PackedInt32Array(53, 55, 54), PackedInt32Array(62, 61, 59), PackedInt32Array(59, 61, 60), PackedInt32Array(66, 65, 63), PackedInt32Array(63, 65, 64), PackedInt32Array(70, 69, 67), PackedInt32Array(67, 69, 68), PackedInt32Array(74, 73, 71), PackedInt32Array(71, 73, 72), PackedInt32Array(78, 77, 75), PackedInt32Array(75, 77, 76), PackedInt32Array(82, 81, 79), PackedInt32Array(79, 81, 80), PackedInt32Array(85, 84, 83), PackedInt32Array(87, 86, 88), PackedInt32Array(88, 86, 89), PackedInt32Array(92, 91, 90), PackedInt32Array(95, 94, 93), PackedInt32Array(98, 97, 96), PackedInt32Array(100, 99, 101), PackedInt32Array(101, 99, 102), PackedInt32Array(107, 106, 103), PackedInt32Array(103, 106, 104), PackedInt32Array(104, 106, 105), PackedInt32Array(109, 108, 110), PackedInt32Array(110, 108, 111), PackedInt32Array(113, 112, 114), PackedInt32Array(114, 112, 115), PackedInt32Array(119, 118, 116), PackedInt32Array(116, 118, 117), PackedInt32Array(123, 122, 120), PackedInt32Array(120, 122, 121), PackedInt32Array(127, 126, 124), PackedInt32Array(124, 126, 125), PackedInt32Array(131, 130, 128), PackedInt32Array(128, 130, 129), PackedInt32Array(135, 134, 132), PackedInt32Array(132, 134, 133), PackedInt32Array(138, 137, 136), PackedInt32Array(141, 140, 139), PackedInt32Array(144, 143, 142), PackedInt32Array(146, 145, 147), PackedInt32Array(149, 148, 150), PackedInt32Array(150, 148, 151), PackedInt32Array(153, 152, 154), PackedInt32Array(154, 152, 155), PackedInt32Array(157, 156, 158), PackedInt32Array(158, 156, 160), PackedInt32Array(158, 160, 159), PackedInt32Array(161, 163, 162), PackedInt32Array(166, 165, 167), PackedInt32Array(167, 165, 164), PackedInt32Array(168, 171, 169), PackedInt32Array(169, 171, 170), PackedInt32Array(174, 173, 172), PackedInt32Array(175, 179, 176), PackedInt32Array(176, 179, 177), PackedInt32Array(177, 179, 178), PackedInt32Array(182, 181, 180), PackedInt32Array(183, 189, 190), PackedInt32Array(190, 189, 188), PackedInt32Array(190, 188, 187), PackedInt32Array(190, 187, 184), PackedInt32Array(184, 187, 185), PackedInt32Array(185, 187, 186), PackedInt32Array(193, 192, 194), PackedInt32Array(194, 192, 197), PackedInt32Array(194, 197, 195), PackedInt32Array(195, 197, 196), PackedInt32Array(195, 196, 191), PackedInt32Array(200, 199, 201), PackedInt32Array(201, 199, 204), PackedInt32Array(201, 204, 202), PackedInt32Array(202, 204, 203), PackedInt32Array(202, 203, 198)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y3crn"]
+size = Vector3(22, 1.32, 22)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ltynf"]
+resource_name = "Cube"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqcam"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s25gt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6nfs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gd750"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sc35v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_crg1n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4beik"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lx5xb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kql1l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3iinw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lcxlq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tsocc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2fmdt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lb3jj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3hivm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vqcxf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6vwyb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hdkr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kq70i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bo6jd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rg276"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_snj0i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4ncy2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qkjjh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bk3db"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_85l7o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ifkkt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uig7a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l4oyc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1k8pt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8t7l3"]
+resource_name = "Cube"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vf6iw"]
+
+[node name="Ground (1)" type="Node3D"]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_8s0kw")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D"]
+editor_description = "[MeshRenderer 23::495e87bb905f0b144b702e24f49e3d38:5008263597834154842]"
+mesh = ExtResource("1_y6kkh")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("2_ko1fg")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 5008263597834154843, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "ecf6cbaf9dd791b4c845b27444e0e761", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/MeshRenderer"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/MeshRenderer/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44, 0)
+shape = SubResource("BoxShape3D_y3crn")
+
+[node name="Obstacles 1" type="Node3D" parent="NavigationRegion3D"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 18.28, 4.075, -10.88)
+
+[node name="Cube" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.16, -2.5, 26.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303523021089]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303523021103, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube/BoxCollider"]
+shape = SubResource("BoxShape3D_sqcam")
+
+[node name="Cube (4)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 3.11, -2.5, 17.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (4)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303007428613]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303007428611, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (4)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (4)/BoxCollider"]
+shape = SubResource("BoxShape3D_s25gt")
+
+[node name="Cube (19)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 4, 3.11, -2.5, 12.68)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (19)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303662010099]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303662010097, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (19)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (19)/BoxCollider"]
+shape = SubResource("BoxShape3D_l6nfs")
+
+[node name="Cube (20)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 4, 3.11, -1.5, 14.96)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (20)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302749733285]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302749733283, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (20)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (20)/BoxCollider"]
+shape = SubResource("BoxShape3D_gd750")
+
+[node name="Cube (21)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, 0, 0, 0, 0.5, 0, 0, 0, 1, 3.11, -2.75, 18.4)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (21)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303936613502]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303936613500, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (21)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (21)/BoxCollider"]
+shape = SubResource("BoxShape3D_sc35v")
+
+[node name="Cube (22)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(0.905, 0.866025, 0, -1.56751, 0.5, 0, 0, 0, 1, 3.625, -3.038, 11.193)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (22)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302244260014]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302244260012, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (22)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (22)/BoxCollider"]
+shape = SubResource("BoxShape3D_crg1n")
+
+[node name="Cube (15)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, -4.21468e-08, 2.38418e-07, 2.10734e-08, 4, 1.47514e-07, -2.38418e-07, -2.95028e-07, 2, 3.04, -1, 22.2)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (15)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302920643662]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302920643660, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (15)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (15)/BoxCollider"]
+shape = SubResource("BoxShape3D_4beik")
+
+[node name="Cube (16)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, -3.16101e-08, 2.38418e-07, 2.10734e-08, 3, 1.47514e-07, -2.38418e-07, -2.21271e-07, 2, 3.04, -1.5, 24.2)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (16)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303757957896]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303757957910, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (16)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (16)/BoxCollider"]
+shape = SubResource("BoxShape3D_lx5xb")
+
+[node name="Cube (17)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, -2.10734e-08, 2.38418e-07, 2.10734e-08, 2, 1.47514e-07, -2.38418e-07, -1.47514e-07, 2, 3.04, -2, 26.2)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (17)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303290465095]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303290465093, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (17)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (17)/BoxCollider"]
+shape = SubResource("BoxShape3D_kql1l")
+
+[node name="Cube (18)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(2, -1.05367e-08, 2.38418e-07, 2.10734e-08, 1, 1.47514e-07, -2.38418e-07, -7.3757e-08, 2, 3.04, -2.5, 28.2)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (18)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303492116578]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303492116576, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (18)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (18)/BoxCollider"]
+shape = SubResource("BoxShape3D_3iinw")
+
+[node name="Cube (1)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 4, 0, 1, 0, -1, 0, -1.74846e-07, 14.44, -2.5, 26.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (1)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302978248325]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302978248323, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (1)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (1)/BoxCollider"]
+shape = SubResource("BoxShape3D_lcxlq")
+
+[node name="Cube (2)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 2, 0, 2, 0, -1, 0, -8.74228e-08, 16.82, -2, 24.24)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (2)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303097386400]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303097386414, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (2)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (2)/BoxCollider"]
+shape = SubResource("BoxShape3D_tsocc")
+
+[node name="Cube (3)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 4, 0, 1, 0, -1, 0, -1.74846e-07, 16.72, -1.5, 26.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (3)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303146062478]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303146062476, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (3)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (3)/BoxCollider"]
+shape = SubResource("BoxShape3D_2fmdt")
+
+[node name="Cube (5)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 4, 0, -2, 0, -8.74228e-08, 3.05, -1, 20.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (5)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302491885604]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302491885602, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (5)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (5)/BoxCollider"]
+shape = SubResource("BoxShape3D_lb3jj")
+
+[node name="Cube (6)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 3, 0, -2, 0, -8.74228e-08, 5.05, -1.5, 20.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (6)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303624098585]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303624098599, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (6)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (6)/BoxCollider"]
+shape = SubResource("BoxShape3D_3hivm")
+
+[node name="Cube (7)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 7.05, -2, 20.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (7)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302481819556]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302481819554, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (7)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (7)/BoxCollider"]
+shape = SubResource("BoxShape3D_vqcxf")
+
+[node name="Cube (8)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 1, 0, -2, 0, -8.74228e-08, 9.05, -2.5, 20.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (8)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302639975869]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302639975867, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (8)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (8)/BoxCollider"]
+shape = SubResource("BoxShape3D_6vwyb")
+
+[node name="Cube (9)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 5, 0, -1, 0, -4.37114e-08, 12.65, -0.5, 19.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (9)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303445119962]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303445119960, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (9)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (9)/BoxCollider"]
+shape = SubResource("BoxShape3D_0hdkr")
+
+[node name="Cube (10)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-1.8919e-07, -2.80971e-08, 1, -3.63175, 0.766045, 0, -4.32815, -0.642788, -4.37114e-08, 12.65, -1.55, 17.19)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (10)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302391828443]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302391828441, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (10)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (10)/BoxCollider"]
+shape = SubResource("BoxShape3D_kq70i")
+
+[node name="Cube (11)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 2, 0, 1, 0, -1, 0, -8.74228e-08, 16.59, -2.5, 18.9)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (11)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093304128647499]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093304128647497, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (11)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (11)/BoxCollider"]
+shape = SubResource("BoxShape3D_bo6jd")
+
+[node name="Cube (12)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 2, 0, 1, 0, -1, 0, -8.74228e-08, 16.72, -2.5, 22.15)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (12)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302889099023]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302889099021, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (12)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (12)/BoxCollider"]
+shape = SubResource("BoxShape3D_rg276")
+
+[node name="Cube (13)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 0.5, 0, -1, 0, -4.37114e-08, 20.2, -2.75, 26.28)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (13)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303259170045]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303259170043, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (13)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (13)/BoxCollider"]
+shape = SubResource("BoxShape3D_snj0i")
+
+[node name="Cube (14)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-1.77474e-07, 2.52143e-08, 1, -1.38654, 0.642788, -9.13196e-08, -1.16345, -0.766044, -4.37114e-08, 12.953, -3.009, 25.601)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (14)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302469830209]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302469830223, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (14)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (14)/BoxCollider"]
+shape = SubResource("BoxShape3D_4ncy2")
+
+[node name="Cube (23)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 0.2, 0, -7, 0, -3.0598e-07, 11.65, -2.9, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (23)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093304063814311]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093304063814309, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (23)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (23)/BoxCollider"]
+shape = SubResource("BoxShape3D_qkjjh")
+
+[node name="Cube (24)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 0.2, 0, -5, 0, -2.18557e-07, 11.65, -2.5, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (24)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303004988949]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303004988947, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (24)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (24)/BoxCollider"]
+shape = SubResource("BoxShape3D_bk3db")
+
+[node name="Cube (25)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 0.2, 0, -3, 0, -1.31134e-07, 11.65, -2.1, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (25)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093303068887329]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093303068887343, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (25)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (25)/BoxCollider"]
+shape = SubResource("BoxShape3D_85l7o")
+
+[node name="Cube (26)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 0.2, 0, -1, 0, -4.37114e-08, 11.65, -1.9, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (26)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302917805979]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302917805977, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (26)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (26)/BoxCollider"]
+shape = SubResource("BoxShape3D_ifkkt")
+
+[node name="Cube (27)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(4.53606e-07, -1.19394e-08, 1, 2.825, 0.866025, -2.98023e-08, -4.89304, 0.5, 7.54979e-08, 12.65, -2.19, 21.7)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (27)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:1106093302568147356]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1106093302568147354, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (27)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (27)/BoxCollider"]
+shape = SubResource("BoxShape3D_uig7a")
+
+[node name="Cube (28)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-2.62268e-07, 0, 6, 0, 0.2, 0, -6, 0, -2.62268e-07, 11.65, -2.7, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (28)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:7136566831321140259]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 291436618783212973, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (28)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (28)/BoxCollider"]
+shape = SubResource("BoxShape3D_l4oyc")
+
+[node name="Cube (29)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(-1.74846e-07, 0, 4, 0, 0.2, 0, -4, 0, -1.74846e-07, 11.65, -2.3, 11.88)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (29)"]
+editor_description = "[MeshRenderer 23::9906110e0a75b12429e2ee293eb305dd:3834804602918154009]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1806116802229436668, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (29)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (29)/BoxCollider"]
+shape = SubResource("BoxShape3D_1k8pt")
+
+[node name="Cube (30)" type="Node3D" parent="NavigationRegion3D/Obstacles 1"]
+transform = Transform3D(5.59979, 0.642788, 0, -4.69878, 0.766044, 0, 0, 0, 1, 6.5, -1.72, 22.58)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles 1/Cube (30)"]
+editor_description = "[MeshRenderer 23::9fc0d4010bbf28b4594072e72b8655ab:662198067]"
+mesh = SubResource("BoxMesh_8t7l3")
+surface_material_override/0 = ExtResource("3_e5lah")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 662198064, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="NavigationRegion3D/Obstacles 1/Cube (30)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Obstacles 1/Cube (30)/BoxCollider"]
+shape = SubResource("BoxShape3D_vf6iw")
