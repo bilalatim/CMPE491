@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://0g1xe2tmiabh"]
+
+[ext_resource type="Script" path="res://FPS.gd" id="1_i52g5"]
+
+[node name="FPS" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.079
+anchor_bottom = 0.076
+offset_right = 89.992
+offset_bottom = 48.752
+script = ExtResource("1_i52g5")
