@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://docf7348gtys4"]
+
+[ext_resource type="ArrayMesh" uid="uid://d18pc28851jto" path="res://Assets/CityVoxelPack/Assets/roads/medium/Mesh/road7bis.road7bis.mesh" id="1_l48jp"]
+[ext_resource type="Material" uid="uid://dpmixi8f1fv5" path="res://Assets/CityVoxelPack/Assets/roads/Materials/roads.mat.tres" id="2_gauqu"]
+
+[node name="road7bis" type="Node3D"]
+
+[node name="road7bis" type="Node3D" parent="."]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="road7bis"]
+editor_description = "[MeshRenderer 23::1c4d653ddfc7a3b4eb623f2625848637:8881206292681107610]"
+mesh = ExtResource("1_l48jp")
+surface_material_override/0 = ExtResource("2_gauqu")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1559289505093643531, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "12b5ac9ff0218cb439a67cd4aff91cdb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StitchLightmapSeams": 1
+}

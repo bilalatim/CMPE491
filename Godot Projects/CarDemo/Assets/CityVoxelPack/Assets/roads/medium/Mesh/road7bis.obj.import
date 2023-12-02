@@ -1,0 +1,54 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://v4we4lrti8hs"
+path="res://.godot/imported/road7bis.obj-4d9d81a24077309901c643de75f22ee6.scn"
+
+[deps]
+
+source_file="res://Assets/CityVoxelPack/Assets/roads/medium/Mesh/road7bis.obj"
+dest_files=["res://.godot/imported/road7bis.obj-4d9d81a24077309901c643de75f22ee6.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_road7bis": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/CityVoxelPack/Assets/roads/medium/Mesh/road7bis.road7bis.mesh"
+},
+"road7bis": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/CityVoxelPack/Assets/roads/medium/Mesh/road7bis.road7bis.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+gltf/embedded_image_handling=1

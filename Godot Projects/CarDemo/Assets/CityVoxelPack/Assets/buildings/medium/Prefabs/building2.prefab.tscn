@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://defhpfpkef0xs"]
+
+[ext_resource type="ArrayMesh" uid="uid://c4da04ivcj7if" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Meshes/building2.building2.mesh" id="1_50iea"]
+[ext_resource type="Material" uid="uid://d4ird1xvbhk0" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Materials/building1.mat.tres" id="2_sqwp2"]
+
+[node name="building2" type="Node3D"]
+
+[node name="building2" type="Node3D" parent="."]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="building2"]
+editor_description = "[MeshRenderer 23::2f27bf2cfadc6cf45997d1ae68bc75a7:3540478502094468395]"
+mesh = ExtResource("1_50iea")
+surface_material_override/0 = ExtResource("2_sqwp2")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 6232535141024236066, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "f242548e4848c614ca1825e176f890d4", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StitchLightmapSeams": 1
+}
