@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ft2e2ttbim8l"]
+
+[ext_resource type="PackedScene" uid="uid://dx7i4uulbal44" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building6.prefab.tscn" id="1_pdbqj"]
+
+[node name="building10_Var2" instance=ExtResource("1_pdbqj")]
+
+[node name="Windows" type="Node3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.49123, 1.59518, 0.797626)

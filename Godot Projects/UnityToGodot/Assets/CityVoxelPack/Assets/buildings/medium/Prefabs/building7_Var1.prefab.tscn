@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://qcx1mha5gaix"]
+
+[ext_resource type="PackedScene" uid="uid://ccgn0y85n50xc" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building7.prefab.tscn" id="1_wiggn"]
+
+[node name="building11_Var1" instance=ExtResource("1_wiggn")]
+
+[node name="Windows" type="Node3D" parent="." index="1"]

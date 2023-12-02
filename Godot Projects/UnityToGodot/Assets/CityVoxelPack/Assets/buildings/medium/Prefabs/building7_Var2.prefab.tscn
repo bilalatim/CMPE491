@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpts2m6os8fvv"]
+
+[ext_resource type="PackedScene" uid="uid://ccgn0y85n50xc" path="res://Assets/CityVoxelPack/Assets/buildings/medium/Prefabs/building7.prefab.tscn" id="1_sds5d"]
+[ext_resource type="PackedScene" uid="uid://n8ae85njwa6e" path="res://Assets/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x3.prefab.tscn" id="2_1m0ca"]
+
+[node name="building11_Var2" instance=ExtResource("1_sds5d")]
+
+[node name="Windows" type="Node3D" parent="." index="1"]
+
+[node name="door4_4x3 (1)" parent="." index="2" instance=ExtResource("2_1m0ca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, 11.6)
+
+[node name="door4_4x3" parent="." index="3" instance=ExtResource("2_1m0ca")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -9.6, 2, 9)
+
+[editable path="door4_4x3 (1)"]
+[editable path="door4_4x3"]
