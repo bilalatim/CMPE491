@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckgmd6rrsy171"]
+[gd_scene load_steps=9 format=3 uid="uid://ckgmd6rrsy171"]
 
 [ext_resource type="ArrayMesh" uid="uid://dvwsybu2ncwrj" path="res://Assets/NavMeshExamples/Example01 - Basics/Level.Ground.mesh" id="1_mlvx6"]
 [ext_resource type="Material" uid="uid://d2xb5cn12j4ps" path="res://Assets/Walls.mat.tres" id="2_tpmph"]
 [ext_resource type="PackedScene" uid="uid://cgp71jxm5w750" path="res://Assets/Prefabs/Obstacles.prefab.tscn" id="3_p66gl"]
+[ext_resource type="Material" uid="uid://cdn52l1s5trvg" path="res://Assets/Obstacles.mat.tres" id="4_3kl42"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_8s0kw"]
 vertices = PackedVector3Array(-2, 1.53, -9.25, -0.25, 1.53, -9.5, -0.25, 1.53, -10.5, -10.5, 1.53, -10.5, -1.75, 1.53, -4.5, -0.25, 1.53, -4.5, -0.25, 1.53, -6.25, -2, 1.53, -6.5, -2, 1.53, -6.5, -2, 1.53, -9.25, -10.5, 1.53, -10.5, -10.5, 1.53, -4, -2, 1.53, -4, -1.75, 1.53, -4.5, -2, 1.53, -6.5, -10.5, 1.53, -4, 1.25, 1.53, -1.5, -0.25, 1.53, -1.25, -0.25, 1.53, -0.5, 1.25, 1.53, -0.25, 1.25, 1.53, -0.25, 10.5, 1.53, 3, 10.5, 1.53, -3.75, 1.25, 1.53, -1.5, -0.25, 1.53, -10.5, -0.25, 1.53, -9.5, 1.25, 1.53, -9.25, 10.5, 1.53, -10.5, 1.25, 1.53, -6.5, -0.25, 1.53, -6.25, -0.25, 1.53, -4.5, 1.25, 1.53, -4.25, 10.5, 1.53, -3.75, 1.25, 1.53, -4.25, 1.25, 1.53, -1.5, 10.5, 1.53, -3.75, 1.25, 1.53, -6.5, 10.5, 1.53, -3.75, 10.5, 1.53, -10.5, 1.25, 1.53, -9.25, 1.25, 1.53, -0.25, 1, 1.53, 2.75, 10.5, 1.53, 3, -1, 2.53, -8.5, -1, 2.53, -7.25, 0.25, 2.53, -7.25, 0.25, 2.53, -8.5, -2, 1.53, -0.25, -0.25, 1.53, -0.5, -0.25, 1.53, -1.25, -2, 1.53, -1.5, -10.5, 1.53, 2.25, -2, 1.53, -0.25, -2, 1.53, -1.5, -10.5, 1.53, -4, -10.5, 1.53, 2.25, -2, 1.53, 2.25, -2, 1.53, -0.25, -2, 1.53, -1.5, -2, 1.53, -4, -10.5, 1.53, -4, -1, 2.53, -3.5, -1, 2.53, -2.25, 0.25, 2.53, -2.25, 0.25, 2.53, -3.5, -1, 2.53, 0.5, -1, 2.53, 1.75, 0.25, 2.53, 1.75, 0.25, 2.53, 0.5, -0.25, 1.53, 10.5, -0.25, 1.53, 8.75, -2, 1.53, 8.5, -10.5, 1.53, 10.5, -0.25, 1.53, 5.5, -0.25, 1.53, 2.75, -1.75, 1.53, 2.75, -2, 1.53, 5.75, -10.5, 1.53, 10.5, -2, 1.53, 8.5, -2, 1.53, 5.75, -10.5, 1.53, 2.25, -2, 1.53, 5.75, -1.75, 1.53, 2.75, -2, 1.53, 2.25, -10.5, 1.53, 2.25, 1.25, 1.53, 8.5, -0.25, 1.53, 8.75, -0.25, 1.53, 10.5, 10.5, 1.53, 10.5, 1, 1.53, 2.75, -0.25, 1.53, 2.75, -0.25, 1.53, 5.5, 1.25, 1.53, 5.75, 10.5, 1.53, 3, 1.25, 1.53, 5.75, 1.25, 1.53, 8.5, 10.5, 1.53, 10.5, 10.5, 1.53, 3, -1, 2.53, 6.5, -1, 2.53, 7.75, 0.25, 2.53, 7.75, 0.25, 2.53, 6.5)
@@ -10,6 +11,11 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y3crn"]
 size = Vector3(22, 1.32, 22)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y6tm5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ltynf"]
+resource_name = "Cube"
 
 [node name="Ground" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.575, 0)
@@ -73,5 +79,60 @@ shape = SubResource("BoxShape3D_y3crn")
 
 [node name="Obstacles" parent="NavigationRegion3D" instance=ExtResource("3_p66gl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
+
+[node name="Obstacle" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 5.55232, 1.56868, 1.18)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Obstacle"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle/BoxCollider"]
+shape = SubResource("BoxShape3D_y6tm5")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Obstacle"]
+editor_description = "[MeshRenderer 23::a917e933ca1a0804abb305caaf878724:928797013829516797]"
+mesh = SubResource("BoxMesh_ltynf")
+surface_material_override/0 = ExtResource("4_3kl42")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 928797013829516799, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 1,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0
+}
 
 [editable path="NavigationRegion3D/Obstacles"]
