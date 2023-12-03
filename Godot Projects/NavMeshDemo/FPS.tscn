@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://0g1xe2tmiabh"]
 
-[ext_resource type="Script" path="res://FPS.gd" id="1_1ejqi"]
+[ext_resource type="Script" path="res://FPS.gd" id="1_ekheq"]
 
-[node name="Control" type="Control"]
+[node name="FPS" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -16,4 +16,4 @@ anchor_right = 0.079
 anchor_bottom = 0.076
 offset_right = 89.992
 offset_bottom = 48.752
-script = ExtResource("1_1ejqi")
+script = ExtResource("1_ekheq")

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ckgmd6rrsy171" path="res://Assets/Prefabs/ground.tscn" id="3_6tvml"]
 [ext_resource type="PackedScene" uid="uid://8phjd5kpkoyc" path="res://Assets/Prefabs/Level Variant.prefab.tscn" id="3_hlbk3"]
 [ext_resource type="PackedScene" uid="uid://b1g2v757ylmos" path="res://Assets/Prefabs/ground_(1).tscn" id="4_v58u7"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://control.tscn" id="6_hxyce"]
+[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="6_hxyce"]
 [ext_resource type="PackedScene" uid="uid://cgiy752ge1jdy" path="res://Assets/Prefabs/Player.prefab.tscn" id="6_sqvu1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vcfjh"]
