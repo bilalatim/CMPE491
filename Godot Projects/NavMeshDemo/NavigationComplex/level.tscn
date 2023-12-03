@@ -1,0 +1,4662 @@
+[gd_scene load_steps=526 format=3 uid="uid://c1otli1vo64js"]
+
+[ext_resource type="Script" path="res://NavigationComplex/platform.gd" id="1_cmkw0"]
+[ext_resource type="Script" path="res://NavigationComplex/gate.gd" id="2_qs2wc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yoqx1"]
+albedo_color = Color(0, 0.4, 0.290196, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3vnh8"]
+size = Vector2(128, 128)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_phslw"]
+size = Vector3(128, 1, 128)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pp8iq"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3j1e"]
+albedo_color = Color(0.521569, 0.282353, 0.188235, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ht865"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_civx0"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lavgk"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xmuuv"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gu5t2"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_84mbk"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vitws"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4ovpa"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bidfh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tg2m5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_01uyd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w3hr1"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ccp0"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3g8jy"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kgqdq"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s8hy3"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_en53i"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gobb8"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p0wcp"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ryu1"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1bp07"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vogwj"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5k0ao"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pka0v"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ye1ke"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ij1nl"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4j8k8"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xkkf3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hobt1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8h0l3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qgpwh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_byn0d"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0nl32"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ctqo"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ygt8"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lc8xm"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_b6dhh"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ikno4"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ls1iv"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j5i0u"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_28x4a"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_byckg"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l6o2k"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_whras"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f8byj"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ostd0"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hyl2v"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ruqa0"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e0suo"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_maaha"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_15wga"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ta3op"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_88n6t"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0grgt"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_spulq"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wt28v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hv4sk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vln4y"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0lfuv"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ewcar"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sy177"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_84ys8"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5bi7j"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ok0f"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_41hok"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oqmkw"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j60e4"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_limxi"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8gdj7"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5y70"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4fuel"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_25e87"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0fbia"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fdmk3"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mv0mo"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n546k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8xxi5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7nka0"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4cdvd"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qyjsv"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wf545"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qq2e2"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p4xhj"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dah84"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_16lnn"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ed57n"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yhu8y"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_siylb"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ebpjm"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m46us"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6yjwr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0fcye"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p7jmr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jskux"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q4oj6"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4t8e5"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pn6o8"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i5lny"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vhk5x"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nxk0s"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3mc20"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dbrwn"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r1nkh"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lvp6a"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8tp1g"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5qc8h"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uf600"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbwdx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_n2k17"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3cec2"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0npqu"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8a1q3"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rlafx"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_htea6"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0g8ki"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l0q23"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rbw8x"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i3dia"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_el3df"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g8d5c"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mphux"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_liqy1"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e7ub3"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sm6u2"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_62dwx"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_34dai"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_co6b6"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3nx5r"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3v27a"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mnvct"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f6rt2"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_muund"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5gxdy"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jmivp"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_afqbf"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rf2gd"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_was2v"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jg6jo"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4smof"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c31s8"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_82nk2"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2klim"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_iq5pq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fxwbv"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5efcl"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tkfmw"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ynsjg"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ms86r"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_132a7"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_te5p3"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2e64c"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mhui0"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vlwrc"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_upbys"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bf11a"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8c722"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ue6mw"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oipos"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_njovp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n60mk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_einc7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xp3h6"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5pflm"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwbio"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i10pt"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nhms1"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_emlrt"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o41d6"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_updjf"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q6ghg"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dxa0x"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t22wh"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yfs53"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e1r3m"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rr023"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ojlng"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cpyxr"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nbp6e"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oeogq"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xjbhf"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4c3qh"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yffsm"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p7jxe"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_anscf"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3y6ld"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jmdd3"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ysxwm"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nrhnb"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_eh7ov"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jvls7"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f7d0y"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ticod"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kranc"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fu10c"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ghlow"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbd0j"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pwiur"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ocwf7"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3pfyo"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhd01"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sck3h"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fpchi"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qa2jv"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aj0mr"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_umr2k"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_omox0"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ob58b"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uawqn"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uu7kp"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ckh3k"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1nvfa"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_632i5"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ymv4"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4d6en"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ro5he"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y6hfe"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q8t8a"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wa5sc"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgfow"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u1236"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m5nyv"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q1mlx"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oysjq"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2n4yw"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0gxvy"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k4tfg"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8lmd0"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v1s8b"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u0b7t"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i5bs1"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rq7i1"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8frmo"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4cv44"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8p7kp"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_psx84"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0f3kd"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3brqf"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_per50"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8k1dx"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5763x"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xnrrc"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6p7n"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8nys7"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h0am6"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ug0j6"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5e1gi"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_df2u8"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ebu88"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tck1h"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bgpxf"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_30frr"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dkmyb"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6487a"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j6vfg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rwuqf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7fvk3"]
+albedo_color = Color(0.364706, 0.47451, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dmmhd"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwg1q"]
+albedo_color = Color(0.521569, 0.282353, 0.188235, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x4nhj"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v1swu"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6mog4"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkxf4"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lahf1"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ldbx"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gqes1"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g1jyr"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sk3px"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_61jfd"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yqhej"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m4acy"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lmqvq"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vsqdw"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e33fx"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nu5sh"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1gews"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4vx3"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iqsv2"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_67vmu"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ivth"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_28wxt"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dbg53"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_issem"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k2c7u"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c3y28"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uroe0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n3rql"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_agg1u"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w6lvc"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4lhy5"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nfdo3"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_prusx"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gcj6v"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w4blb"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j4pw8"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j6372"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jbnpd"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n4lf2"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a3231"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_06mqo"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0mgjr"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_blccp"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2k0w"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w3jpq"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k14pi"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ujgkn"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qyfd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rt7w3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c01ai"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1c03w"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_do0gg"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lpa7g"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wh6eq"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mnfyi"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rspec"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fouoq"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4617"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vy2gj"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_brlsl"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l5jr3"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef5es"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kyxlh"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jtapl"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ja14u"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d8jjp"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wdhv7"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_17gm4"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2pkja"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hi16h"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rxmtq"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bi8xv"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ivvw0"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4htrd"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ww0dm"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u1ple"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jgc44"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dclp6"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cx36u"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aufd5"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qlmqm"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nj6ym"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gaprm"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6apgc"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_afgf7"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_41aop"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oxval"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bpw2t"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sq2tb"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_liar0"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fiq33"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mbnm6"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_15xky"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jmc1j"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qp7si"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4w34f"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_b2ah3"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vuwps"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ne4eg"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ri31f"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6myna"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_djvsw"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_43ite"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nsa80"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6i4q8"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nm2ue"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_biiu8"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wpyqt"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rhhqj"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrid4"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pviyq"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_65lh8"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0wv5p"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kaan1"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dbi7l"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8mjkf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y622k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vc3tr"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l2q0c"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w8ds7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kasc4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o3pmq"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5nr1l"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jk41o"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bxg4d"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nftkb"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8egjp"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1jhv7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8fu7y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0i7mt"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5pr3c"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ge5b3"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5o1tv"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qg2rm"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ntxln"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_76re1"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i4fc5"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kw1xu"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tmmlr"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xthu5"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_id2f5"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_31n1y"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1wu10"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_446fd"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_prafn"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4krpr"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_74cjp"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ht5a4"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8ygfp"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vxuox"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2wsrh"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxxey"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x5htc"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_byied"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yqd8p"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_noe51"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ttkc3"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_581y0"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q8ybf"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2jou"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n25io"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sfw4u"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gmo01"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7fpr3"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qejol"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l4kdj"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tyv5s"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h5xxa"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sowg5"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4gpty"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qckpu"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q3n1y"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1imxj"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d4mlx"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j714p"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h8rv8"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ie2ji"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a2eaa"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j22vf"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0day"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nl2ef"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pqidj"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_80ag8"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oqxqc"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7sx7n"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dt6dh"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4i52q"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5ebb"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oebok"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sxtgf"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m4v5c"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cy6j3"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iufu3"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k15hv"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fidha"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nicmi"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cbun5"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_heilb"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t0k7p"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8gbr4"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f1s1r"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5woa0"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0ow3d"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hw4v8"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_43uf7"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hllu0"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_npb61"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tgpfc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yd5va"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kced1"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8vkxm"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ff1bb"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ds6u"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7rppx"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f8hfd"]
+size = Vector3(7, 7, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_06tgq"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_asq2k"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yon5x"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2pbeh"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqtxl"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgl3w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_37nnv"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ho7mk"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uf1hi"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c80po"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n8yd4"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_scgo6"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kkxu2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mie1b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qqpnl"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_io5r0"]
+size = Vector3(6, 6, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvoy8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4nwye"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ionjo"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5nq2p"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y42as"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rxreo"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cw7pj"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_267hq"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6qdd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_icje0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hpwfx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvift"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yf61s"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d43g2"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7omxy"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cvjq3"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_epv7t"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0rdcw"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vwb65"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n0qrn"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ei05c"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sq80v"]
+size = Vector3(8, 8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fh0ea"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bs0r1"]
+size = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_poic4"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nw4ay"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ui1q2"]
+size = Vector2(8, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gk0ji"]
+size = Vector3(8, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jq0os"]
+size = Vector3(8, 8, 1)
+
+[node name="Level" type="Node3D"]
+
+[node name="NorthArea" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 66)
+
+[node name="Floor" type="StaticBody3D" parent="NorthArea"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NorthArea/Floor"]
+material_override = SubResource("StandardMaterial3D_yoqx1")
+mesh = SubResource("PlaneMesh_3vnh8")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NorthArea/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_phslw")
+
+[node name="Obstacles" type="Node3D" parent="NorthArea"]
+
+[node name="Obstacle0" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 12)
+
+[node name="__78138" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_pp8iq")
+
+[node name="__78139" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ht865")
+
+[node name="Obstacle1" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0, -23)
+
+[node name="__78140" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_civx0")
+
+[node name="__78141" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_lavgk")
+
+[node name="Obstacle2" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 5)
+
+[node name="__78142" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_xmuuv")
+
+[node name="__78143" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_gu5t2")
+
+[node name="Obstacle3" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 47)
+
+[node name="__78144" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_84mbk")
+
+[node name="__78145" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_vitws")
+
+[node name="Obstacle4" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, -5)
+
+[node name="__78146" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_4ovpa")
+
+[node name="__78147" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_bidfh")
+
+[node name="Obstacle5" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="__78148" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_tg2m5")
+
+[node name="__78149" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_01uyd")
+
+[node name="Obstacle6" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 41)
+
+[node name="__78150" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_w3hr1")
+
+[node name="__78151" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4ccp0")
+
+[node name="Obstacle7" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -33)
+
+[node name="__78152" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_3g8jy")
+
+[node name="__78153" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_kgqdq")
+
+[node name="Obstacle8" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -4)
+
+[node name="__78154" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_s8hy3")
+
+[node name="__78155" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_en53i")
+
+[node name="Obstacle9" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, -12)
+
+[node name="__78156" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_gobb8")
+
+[node name="__78157" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_p0wcp")
+
+[node name="Obstacle10" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -51)
+
+[node name="__78158" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_2ryu1")
+
+[node name="__78159" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_1bp07")
+
+[node name="Obstacle11" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 7)
+
+[node name="__78160" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_vogwj")
+
+[node name="__78161" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5k0ao")
+
+[node name="Obstacle12" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 6)
+
+[node name="__78162" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_pka0v")
+
+[node name="__78163" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ye1ke")
+
+[node name="Obstacle13" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -53)
+
+[node name="__78164" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_ij1nl")
+
+[node name="__78165" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4j8k8")
+
+[node name="Obstacle14" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -20)
+
+[node name="__78166" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_xkkf3")
+
+[node name="__78167" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_hobt1")
+
+[node name="Obstacle15" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -35)
+
+[node name="__78168" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_8h0l3")
+
+[node name="__78169" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_qgpwh")
+
+[node name="Obstacle16" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -39)
+
+[node name="__78170" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_byn0d")
+
+[node name="__78171" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0nl32")
+
+[node name="Obstacle17" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 29)
+
+[node name="__78172" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_8ctqo")
+
+[node name="__78173" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_2ygt8")
+
+[node name="Obstacle18" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 31)
+
+[node name="__78174" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_lc8xm")
+
+[node name="__78175" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_b6dhh")
+
+[node name="Obstacle19" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 39)
+
+[node name="__78176" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_ikno4")
+
+[node name="__78177" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ls1iv")
+
+[node name="Obstacle20" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 25)
+
+[node name="__78178" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_j5i0u")
+
+[node name="__78179" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_28x4a")
+
+[node name="Obstacle21" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+
+[node name="__78180" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_byckg")
+
+[node name="__78181" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_l6o2k")
+
+[node name="Obstacle22" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -3)
+
+[node name="__78182" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_whras")
+
+[node name="__78183" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_f8byj")
+
+[node name="Obstacle23" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -25)
+
+[node name="__78184" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_ostd0")
+
+[node name="__78185" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_hyl2v")
+
+[node name="Obstacle24" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0, 44)
+
+[node name="__78186" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_ruqa0")
+
+[node name="__78187" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_e0suo")
+
+[node name="Obstacle25" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 17)
+
+[node name="__78188" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_maaha")
+
+[node name="__78189" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_15wga")
+
+[node name="Obstacle26" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 31)
+
+[node name="__78190" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_ta3op")
+
+[node name="__78191" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_88n6t")
+
+[node name="Obstacle27" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -21)
+
+[node name="__78192" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_0grgt")
+
+[node name="__78193" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_spulq")
+
+[node name="Obstacle28" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -17)
+
+[node name="__78194" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_wt28v")
+
+[node name="__78195" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_hv4sk")
+
+[node name="Obstacle29" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -43)
+
+[node name="__78196" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_vln4y")
+
+[node name="__78197" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0lfuv")
+
+[node name="Obstacle30" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 52)
+
+[node name="__78198" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_ewcar")
+
+[node name="__78199" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_sy177")
+
+[node name="Obstacle31" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 51)
+
+[node name="__78200" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_84ys8")
+
+[node name="__78201" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5bi7j")
+
+[node name="Obstacle32" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
+
+[node name="__78202" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_3ok0f")
+
+[node name="__78203" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_41hok")
+
+[node name="Obstacle33" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, -56)
+
+[node name="__78204" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_oqmkw")
+
+[node name="__78205" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_j60e4")
+
+[node name="Obstacle34" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 35)
+
+[node name="__78206" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_limxi")
+
+[node name="__78207" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8gdj7")
+
+[node name="Obstacle35" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -13)
+
+[node name="__78208" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_v5y70")
+
+[node name="__78209" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4fuel")
+
+[node name="Obstacle36" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 37)
+
+[node name="__78210" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_25e87")
+
+[node name="__78211" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0fbia")
+
+[node name="Obstacle37" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -49)
+
+[node name="__78212" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_fdmk3")
+
+[node name="__78213" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_mv0mo")
+
+[node name="Obstacle38" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -25)
+
+[node name="__78214" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_n546k")
+
+[node name="__78215" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8xxi5")
+
+[node name="Obstacle39" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 6)
+
+[node name="__78216" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_7nka0")
+
+[node name="__78217" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4cdvd")
+
+[node name="Obstacle40" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -38)
+
+[node name="__78218" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_qyjsv")
+
+[node name="__78219" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_wf545")
+
+[node name="Obstacle41" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -53)
+
+[node name="__78220" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_qq2e2")
+
+[node name="__78221" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_p4xhj")
+
+[node name="Obstacle42" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 22)
+
+[node name="__78222" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_dah84")
+
+[node name="__78223" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_16lnn")
+
+[node name="Obstacle43" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 3)
+
+[node name="__78224" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_ed57n")
+
+[node name="__78225" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_yhu8y")
+
+[node name="Obstacle44" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 15)
+
+[node name="__78226" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_siylb")
+
+[node name="__78227" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ebpjm")
+
+[node name="Obstacle45" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -25)
+
+[node name="__78228" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_m46us")
+
+[node name="__78229" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_6yjwr")
+
+[node name="Obstacle46" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -18)
+
+[node name="__78230" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_0fcye")
+
+[node name="__78231" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_p7jmr")
+
+[node name="Obstacle47" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -56)
+
+[node name="__78232" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_jskux")
+
+[node name="__78233" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_q4oj6")
+
+[node name="Obstacle48" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, -50)
+
+[node name="__78234" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_4t8e5")
+
+[node name="__78235" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_pn6o8")
+
+[node name="Obstacle49" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 40)
+
+[node name="__78236" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_i5lny")
+
+[node name="__78237" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_vhk5x")
+
+[node name="Obstacle50" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -45)
+
+[node name="__78238" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_nxk0s")
+
+[node name="__78239" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_3mc20")
+
+[node name="Obstacle51" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -39)
+
+[node name="__78240" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_dbrwn")
+
+[node name="__78241" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_r1nkh")
+
+[node name="Obstacle52" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -11)
+
+[node name="__78242" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_lvp6a")
+
+[node name="__78243" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8tp1g")
+
+[node name="Obstacle53" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -56)
+
+[node name="__78244" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_5qc8h")
+
+[node name="__78245" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_uf600")
+
+[node name="Obstacle54" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -31)
+
+[node name="__78246" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_hbwdx")
+
+[node name="__78247" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_n2k17")
+
+[node name="Obstacle55" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -23)
+
+[node name="__78248" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_3cec2")
+
+[node name="__78249" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0npqu")
+
+[node name="Obstacle56" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -21)
+
+[node name="__78250" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_8a1q3")
+
+[node name="__78251" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_rlafx")
+
+[node name="Obstacle57" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, -5)
+
+[node name="__78252" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_htea6")
+
+[node name="__78253" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0g8ki")
+
+[node name="Obstacle58" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, 12)
+
+[node name="__78254" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_l0q23")
+
+[node name="__78255" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_rbw8x")
+
+[node name="Obstacle59" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, -5)
+
+[node name="__78256" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_i3dia")
+
+[node name="__78257" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_el3df")
+
+[node name="Obstacle60" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 21)
+
+[node name="__78258" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_g8d5c")
+
+[node name="__78259" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_mphux")
+
+[node name="Obstacle61" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, -21)
+
+[node name="__78260" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_liqy1")
+
+[node name="__78261" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_e7ub3")
+
+[node name="Obstacle62" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
+
+[node name="__78262" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_sm6u2")
+
+[node name="__78263" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_62dwx")
+
+[node name="Obstacle63" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+
+[node name="__78264" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_34dai")
+
+[node name="__78265" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_co6b6")
+
+[node name="Obstacle64" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -6)
+
+[node name="__78266" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_3nx5r")
+
+[node name="__78267" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_3v27a")
+
+[node name="Obstacle65" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 37)
+
+[node name="__78268" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_mnvct")
+
+[node name="__78269" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_f6rt2")
+
+[node name="Obstacle66" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 10)
+
+[node name="__78270" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_muund")
+
+[node name="__78271" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5gxdy")
+
+[node name="Obstacle67" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -39)
+
+[node name="__78272" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_jmivp")
+
+[node name="__78273" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_afqbf")
+
+[node name="Obstacle68" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 6)
+
+[node name="__78274" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_rf2gd")
+
+[node name="__78275" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_was2v")
+
+[node name="Obstacle69" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -55)
+
+[node name="__78276" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_jg6jo")
+
+[node name="__78277" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4smof")
+
+[node name="Obstacle70" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -17)
+
+[node name="__78278" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_c31s8")
+
+[node name="__78279" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_82nk2")
+
+[node name="Obstacle71" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -37)
+
+[node name="__78280" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_2klim")
+
+[node name="__78281" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_iq5pq")
+
+[node name="Obstacle72" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 38)
+
+[node name="__78282" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_fxwbv")
+
+[node name="__78283" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5efcl")
+
+[node name="Obstacle73" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 55)
+
+[node name="__78284" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_tkfmw")
+
+[node name="__78285" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ynsjg")
+
+[node name="Obstacle74" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -41)
+
+[node name="__78286" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_ms86r")
+
+[node name="__78287" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_132a7")
+
+[node name="Obstacle75" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -54)
+
+[node name="__78288" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_te5p3")
+
+[node name="__78289" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_2e64c")
+
+[node name="Obstacle76" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 7)
+
+[node name="__78290" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_mhui0")
+
+[node name="__78291" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_vlwrc")
+
+[node name="Obstacle77" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 4)
+
+[node name="__78292" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_upbys")
+
+[node name="__78293" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_bf11a")
+
+[node name="Obstacle78" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 38)
+
+[node name="__78294" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_8c722")
+
+[node name="__78295" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ue6mw")
+
+[node name="Obstacle79" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -50)
+
+[node name="__78296" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_oipos")
+
+[node name="__78297" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_njovp")
+
+[node name="Obstacle80" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, -42)
+
+[node name="__78298" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_n60mk")
+
+[node name="__78299" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_einc7")
+
+[node name="Obstacle81" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -56)
+
+[node name="__78300" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_xp3h6")
+
+[node name="__78301" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5pflm")
+
+[node name="Obstacle82" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -28)
+
+[node name="__78302" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_kwbio")
+
+[node name="__78303" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_i10pt")
+
+[node name="Obstacle83" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -56)
+
+[node name="__78304" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_nhms1")
+
+[node name="__78305" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_emlrt")
+
+[node name="Obstacle84" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 20)
+
+[node name="__78306" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_o41d6")
+
+[node name="__78307" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_updjf")
+
+[node name="Obstacle85" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 13)
+
+[node name="__78308" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_q6ghg")
+
+[node name="__78309" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_dxa0x")
+
+[node name="Obstacle86" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 35)
+
+[node name="__78310" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_t22wh")
+
+[node name="__78311" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_yfs53")
+
+[node name="Obstacle87" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 49)
+
+[node name="__78312" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_e1r3m")
+
+[node name="__78313" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_rr023")
+
+[node name="Obstacle88" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -21)
+
+[node name="__78314" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_ojlng")
+
+[node name="__78315" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_cpyxr")
+
+[node name="Obstacle89" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, -15)
+
+[node name="__78316" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_nbp6e")
+
+[node name="__78317" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_oeogq")
+
+[node name="Obstacle90" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 14)
+
+[node name="__78318" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_xjbhf")
+
+[node name="__78319" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4c3qh")
+
+[node name="Obstacle91" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 20)
+
+[node name="__78320" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_yffsm")
+
+[node name="__78321" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_p7jxe")
+
+[node name="Obstacle92" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 52)
+
+[node name="__78322" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_anscf")
+
+[node name="__78323" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_3y6ld")
+
+[node name="Obstacle93" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -42)
+
+[node name="__78324" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_jmdd3")
+
+[node name="__78325" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ysxwm")
+
+[node name="Obstacle94" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
+
+[node name="__78326" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_nrhnb")
+
+[node name="__78327" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_eh7ov")
+
+[node name="Obstacle95" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -49)
+
+[node name="__78328" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_jvls7")
+
+[node name="__78329" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_f7d0y")
+
+[node name="Obstacle96" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 27)
+
+[node name="__78330" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_ticod")
+
+[node name="__78331" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_kranc")
+
+[node name="Obstacle97" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 33)
+
+[node name="__78332" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_fu10c")
+
+[node name="__78333" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ghlow")
+
+[node name="Obstacle98" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -33)
+
+[node name="__78334" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_tbd0j")
+
+[node name="__78335" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_pwiur")
+
+[node name="Obstacle99" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -38)
+
+[node name="__78336" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_ocwf7")
+
+[node name="__78337" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_3pfyo")
+
+[node name="Obstacle100" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -44)
+
+[node name="__78338" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_hhd01")
+
+[node name="__78339" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_sck3h")
+
+[node name="Obstacle101" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 7)
+
+[node name="__78340" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_fpchi")
+
+[node name="__78341" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_qa2jv")
+
+[node name="Obstacle102" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -9)
+
+[node name="__78342" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_aj0mr")
+
+[node name="__78343" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_umr2k")
+
+[node name="Obstacle103" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -42)
+
+[node name="__78344" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_omox0")
+
+[node name="__78345" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ob58b")
+
+[node name="Obstacle104" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 50)
+
+[node name="__78346" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_uawqn")
+
+[node name="__78347" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_uu7kp")
+
+[node name="Obstacle105" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 0, 43)
+
+[node name="__78348" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_ckh3k")
+
+[node name="__78349" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_1nvfa")
+
+[node name="Obstacle106" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, -22)
+
+[node name="__78350" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_632i5")
+
+[node name="__78351" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_5ymv4")
+
+[node name="Obstacle107" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -23)
+
+[node name="__78352" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_4d6en")
+
+[node name="__78353" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ro5he")
+
+[node name="Obstacle108" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 6)
+
+[node name="__78354" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_y6hfe")
+
+[node name="__78355" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_q8t8a")
+
+[node name="Obstacle109" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 14)
+
+[node name="__78356" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_wa5sc")
+
+[node name="__78357" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_lgfow")
+
+[node name="Obstacle110" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -7)
+
+[node name="__78358" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_u1236")
+
+[node name="__78359" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_m5nyv")
+
+[node name="Obstacle111" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 28)
+
+[node name="__78360" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_q1mlx")
+
+[node name="__78361" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_oysjq")
+
+[node name="Obstacle112" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -46)
+
+[node name="__78362" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_2n4yw")
+
+[node name="__78363" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_0gxvy")
+
+[node name="Obstacle113" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 34)
+
+[node name="__78364" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_k4tfg")
+
+[node name="__78365" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8lmd0")
+
+[node name="Obstacle114" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 2)
+
+[node name="__78366" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_v1s8b")
+
+[node name="__78367" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_u0b7t")
+
+[node name="Obstacle115" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 13)
+
+[node name="__78368" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_i5bs1")
+
+[node name="__78369" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_rq7i1")
+
+[node name="Obstacle116" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, -20)
+
+[node name="__78370" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_8frmo")
+
+[node name="__78371" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_4cv44")
+
+[node name="Obstacle117" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="__78372" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_8p7kp")
+
+[node name="__78373" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_psx84")
+
+[node name="Obstacle118" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 35)
+
+[node name="__78374" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_0f3kd")
+
+[node name="__78375" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_3brqf")
+
+[node name="Obstacle119" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 14)
+
+[node name="__78376" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_per50")
+
+[node name="__78377" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8k1dx")
+
+[node name="Obstacle120" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -49)
+
+[node name="__78378" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_5763x")
+
+[node name="__78379" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_xnrrc")
+
+[node name="Obstacle121" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 42)
+
+[node name="__78380" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_l6p7n")
+
+[node name="__78381" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_8nys7")
+
+[node name="Obstacle122" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 28)
+
+[node name="__78382" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_h0am6")
+
+[node name="__78383" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_ug0j6")
+
+[node name="Obstacle123" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 29)
+
+[node name="__78384" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_5e1gi")
+
+[node name="__78385" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_df2u8")
+
+[node name="Obstacle124" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 30)
+
+[node name="__78386" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_ebu88")
+
+[node name="__78387" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_tck1h")
+
+[node name="Obstacle125" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -55)
+
+[node name="__78388" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_bgpxf")
+
+[node name="__78389" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_30frr")
+
+[node name="Obstacle126" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 42)
+
+[node name="__78390" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_dkmyb")
+
+[node name="__78391" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_6487a")
+
+[node name="Obstacle127" type="StaticBody3D" parent="NorthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 37)
+
+[node name="__78392" type="CollisionShape3D" parent="NorthArea/Obstacles/Obstacle127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_j6vfg")
+
+[node name="__78393" type="MeshInstance3D" parent="NorthArea/Obstacles/Obstacle127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_j3j1e")
+mesh = SubResource("BoxMesh_rwuqf")
+
+[node name="SouthArea" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -66)
+
+[node name="Floor" type="StaticBody3D" parent="SouthArea"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SouthArea/Floor"]
+material_override = SubResource("StandardMaterial3D_7fvk3")
+mesh = SubResource("PlaneMesh_3vnh8")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SouthArea/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_phslw")
+
+[node name="Obstacles" type="Node3D" parent="SouthArea"]
+
+[node name="Obstacle0" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, 17)
+
+[node name="__77760" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_dmmhd")
+
+[node name="__77761" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_x4nhj")
+
+[node name="Obstacle1" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 7)
+
+[node name="__77762" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_v1swu")
+
+[node name="__77763" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_6mog4")
+
+[node name="Obstacle2" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -20)
+
+[node name="__77764" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_fkxf4")
+
+[node name="__77765" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_lahf1")
+
+[node name="Obstacle3" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+
+[node name="__77766" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_7ldbx")
+
+[node name="__77767" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_gqes1")
+
+[node name="Obstacle4" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 31)
+
+[node name="__77768" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_g1jyr")
+
+[node name="__77769" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_sk3px")
+
+[node name="Obstacle5" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, -1)
+
+[node name="__77770" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_61jfd")
+
+[node name="__77771" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_yqhej")
+
+[node name="Obstacle6" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -10)
+
+[node name="__77772" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_m4acy")
+
+[node name="__77773" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_lmqvq")
+
+[node name="Obstacle7" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 37)
+
+[node name="__77774" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_vsqdw")
+
+[node name="__77775" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_e33fx")
+
+[node name="Obstacle8" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 14)
+
+[node name="__77776" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_nu5sh")
+
+[node name="__77777" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_1gews")
+
+[node name="Obstacle9" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 19)
+
+[node name="__77778" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_o4vx3")
+
+[node name="__77779" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_iqsv2")
+
+[node name="Obstacle10" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -56)
+
+[node name="__77780" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_67vmu")
+
+[node name="__77781" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5ivth")
+
+[node name="Obstacle11" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 19)
+
+[node name="__77782" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_28wxt")
+
+[node name="__77783" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_dbg53")
+
+[node name="Obstacle12" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 56)
+
+[node name="__77784" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_issem")
+
+[node name="__77785" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_k2c7u")
+
+[node name="Obstacle13" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, -37)
+
+[node name="__77786" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_c3y28")
+
+[node name="__77787" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_uroe0")
+
+[node name="Obstacle14" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, -43)
+
+[node name="__77788" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_n3rql")
+
+[node name="__77789" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_agg1u")
+
+[node name="Obstacle15" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 29)
+
+[node name="__77790" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_w6lvc")
+
+[node name="__77791" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_4lhy5")
+
+[node name="Obstacle16" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 0)
+
+[node name="__77792" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_nfdo3")
+
+[node name="__77793" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_prusx")
+
+[node name="Obstacle17" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55, 0, -54)
+
+[node name="__77794" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_gcj6v")
+
+[node name="__77795" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_w4blb")
+
+[node name="Obstacle18" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -44)
+
+[node name="__77796" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_j4pw8")
+
+[node name="__77797" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_j6372")
+
+[node name="Obstacle19" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 16)
+
+[node name="__77798" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_jbnpd")
+
+[node name="__77799" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_n4lf2")
+
+[node name="Obstacle20" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, -48)
+
+[node name="__77800" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_a3231")
+
+[node name="__77801" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_06mqo")
+
+[node name="Obstacle21" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -32)
+
+[node name="__77802" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_0mgjr")
+
+[node name="__77803" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_blccp")
+
+[node name="Obstacle22" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 13)
+
+[node name="__77804" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_c2k0w")
+
+[node name="__77805" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_w3jpq")
+
+[node name="Obstacle23" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 0, -42)
+
+[node name="__77806" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_k14pi")
+
+[node name="__77807" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ujgkn")
+
+[node name="Obstacle24" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 54)
+
+[node name="__77808" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_0qyfd")
+
+[node name="__77809" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_rt7w3")
+
+[node name="Obstacle25" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -40)
+
+[node name="__77810" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_c01ai")
+
+[node name="__77811" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_1c03w")
+
+[node name="Obstacle26" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -55)
+
+[node name="__77812" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_do0gg")
+
+[node name="__77813" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_lpa7g")
+
+[node name="Obstacle27" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 45)
+
+[node name="__77814" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_wh6eq")
+
+[node name="__77815" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_mnfyi")
+
+[node name="Obstacle28" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, -17)
+
+[node name="__77816" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_rspec")
+
+[node name="__77817" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_fouoq")
+
+[node name="Obstacle29" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 38)
+
+[node name="__77818" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_o4617")
+
+[node name="__77819" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_vy2gj")
+
+[node name="Obstacle30" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, -7)
+
+[node name="__77820" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_brlsl")
+
+[node name="__77821" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_l5jr3")
+
+[node name="Obstacle31" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 15)
+
+[node name="__77822" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_ef5es")
+
+[node name="__77823" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_kyxlh")
+
+[node name="Obstacle32" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, 11)
+
+[node name="__77824" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_jtapl")
+
+[node name="__77825" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ja14u")
+
+[node name="Obstacle33" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -1)
+
+[node name="__77826" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_d8jjp")
+
+[node name="__77827" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_wdhv7")
+
+[node name="Obstacle34" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 17)
+
+[node name="__77828" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_17gm4")
+
+[node name="__77829" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_2pkja")
+
+[node name="Obstacle35" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 26)
+
+[node name="__77830" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_hi16h")
+
+[node name="__77831" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_rxmtq")
+
+[node name="Obstacle36" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 25)
+
+[node name="__77832" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_bi8xv")
+
+[node name="__77833" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ivvw0")
+
+[node name="Obstacle37" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 1)
+
+[node name="__77834" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_4htrd")
+
+[node name="__77835" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ww0dm")
+
+[node name="Obstacle38" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -51)
+
+[node name="__77836" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_u1ple")
+
+[node name="__77837" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_jgc44")
+
+[node name="Obstacle39" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 18)
+
+[node name="__77838" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_dclp6")
+
+[node name="__77839" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_cx36u")
+
+[node name="Obstacle40" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -39)
+
+[node name="__77840" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_aufd5")
+
+[node name="__77841" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_qlmqm")
+
+[node name="Obstacle41" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 2)
+
+[node name="__77842" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_nj6ym")
+
+[node name="__77843" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_gaprm")
+
+[node name="Obstacle42" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -18)
+
+[node name="__77844" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_6apgc")
+
+[node name="__77845" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_afgf7")
+
+[node name="Obstacle43" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -12)
+
+[node name="__77846" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_41aop")
+
+[node name="__77847" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_oxval")
+
+[node name="Obstacle44" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, -35)
+
+[node name="__77848" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_bpw2t")
+
+[node name="__77849" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_sq2tb")
+
+[node name="Obstacle45" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 6)
+
+[node name="__77850" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_liar0")
+
+[node name="__77851" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_fiq33")
+
+[node name="Obstacle46" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 27)
+
+[node name="__77852" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_mbnm6")
+
+[node name="__77853" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_15xky")
+
+[node name="Obstacle47" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -45)
+
+[node name="__77854" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_jmc1j")
+
+[node name="__77855" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_qp7si")
+
+[node name="Obstacle48" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -29)
+
+[node name="__77856" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_4w34f")
+
+[node name="__77857" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_b2ah3")
+
+[node name="Obstacle49" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 35)
+
+[node name="__77858" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_vuwps")
+
+[node name="__77859" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ne4eg")
+
+[node name="Obstacle50" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -25)
+
+[node name="__77860" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_ri31f")
+
+[node name="__77861" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_6myna")
+
+[node name="Obstacle51" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 55)
+
+[node name="__77862" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_djvsw")
+
+[node name="__77863" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_43ite")
+
+[node name="Obstacle52" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 36)
+
+[node name="__77864" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_nsa80")
+
+[node name="__77865" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_6i4q8")
+
+[node name="Obstacle53" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -56)
+
+[node name="__77866" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_nm2ue")
+
+[node name="__77867" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_biiu8")
+
+[node name="Obstacle54" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, -16)
+
+[node name="__77868" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_wpyqt")
+
+[node name="__77869" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_rhhqj")
+
+[node name="Obstacle55" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 48)
+
+[node name="__77870" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_vrid4")
+
+[node name="__77871" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_pviyq")
+
+[node name="Obstacle56" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, -37)
+
+[node name="__77872" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_65lh8")
+
+[node name="__77873" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_0wv5p")
+
+[node name="Obstacle57" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -32)
+
+[node name="__77874" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_kaan1")
+
+[node name="__77875" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_dbi7l")
+
+[node name="Obstacle58" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -48)
+
+[node name="__77876" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_8mjkf")
+
+[node name="__77877" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_y622k")
+
+[node name="Obstacle59" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -7)
+
+[node name="__77878" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_vc3tr")
+
+[node name="__77879" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_l2q0c")
+
+[node name="Obstacle60" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, 46)
+
+[node name="__77880" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_w8ds7")
+
+[node name="__77881" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_kasc4")
+
+[node name="Obstacle61" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, -4)
+
+[node name="__77882" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_o3pmq")
+
+[node name="__77883" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5nr1l")
+
+[node name="Obstacle62" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 2)
+
+[node name="__77884" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_jk41o")
+
+[node name="__77885" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_bxg4d")
+
+[node name="Obstacle63" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -13)
+
+[node name="__77886" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_nftkb")
+
+[node name="__77887" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_8egjp")
+
+[node name="Obstacle64" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 25)
+
+[node name="__77888" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_1jhv7")
+
+[node name="__77889" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_8fu7y")
+
+[node name="Obstacle65" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 25)
+
+[node name="__77890" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_0i7mt")
+
+[node name="__77891" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5pr3c")
+
+[node name="Obstacle66" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -3)
+
+[node name="__77892" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_ge5b3")
+
+[node name="__77893" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5o1tv")
+
+[node name="Obstacle67" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -9)
+
+[node name="__77894" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_qg2rm")
+
+[node name="__77895" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ntxln")
+
+[node name="Obstacle68" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 15)
+
+[node name="__77896" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_76re1")
+
+[node name="__77897" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_i4fc5")
+
+[node name="Obstacle69" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, -14)
+
+[node name="__77898" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_kw1xu")
+
+[node name="__77899" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_tmmlr")
+
+[node name="Obstacle70" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 38)
+
+[node name="__77900" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_xthu5")
+
+[node name="__77901" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_id2f5")
+
+[node name="Obstacle71" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 50)
+
+[node name="__77902" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_31n1y")
+
+[node name="__77903" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_1wu10")
+
+[node name="Obstacle72" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 2)
+
+[node name="__77904" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_446fd")
+
+[node name="__77905" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_prafn")
+
+[node name="Obstacle73" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -47)
+
+[node name="__77906" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_4krpr")
+
+[node name="__77907" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_74cjp")
+
+[node name="Obstacle74" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 44)
+
+[node name="__77908" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_ht5a4")
+
+[node name="__77909" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_8ygfp")
+
+[node name="Obstacle75" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -22)
+
+[node name="__77910" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_vxuox")
+
+[node name="__77911" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_2wsrh")
+
+[node name="Obstacle76" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 36)
+
+[node name="__77912" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_lxxey")
+
+[node name="__77913" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_x5htc")
+
+[node name="Obstacle77" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -20)
+
+[node name="__77914" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_byied")
+
+[node name="__77915" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_yqd8p")
+
+[node name="Obstacle78" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0, 28)
+
+[node name="__77916" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_noe51")
+
+[node name="__77917" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ttkc3")
+
+[node name="Obstacle79" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 15)
+
+[node name="__77918" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_581y0")
+
+[node name="__77919" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_q8ybf")
+
+[node name="Obstacle80" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0, 50)
+
+[node name="__77920" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_c2jou")
+
+[node name="__77921" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_n25io")
+
+[node name="Obstacle81" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 47)
+
+[node name="__77922" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_sfw4u")
+
+[node name="__77923" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_gmo01")
+
+[node name="Obstacle82" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0, 46)
+
+[node name="__77924" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_7fpr3")
+
+[node name="__77925" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_qejol")
+
+[node name="Obstacle83" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -24)
+
+[node name="__77926" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_l4kdj")
+
+[node name="__77927" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_tyv5s")
+
+[node name="Obstacle84" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="__77928" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_h5xxa")
+
+[node name="__77929" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_sowg5")
+
+[node name="Obstacle85" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -37)
+
+[node name="__77930" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_4gpty")
+
+[node name="__77931" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_qckpu")
+
+[node name="Obstacle86" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 50)
+
+[node name="__77932" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_q3n1y")
+
+[node name="__77933" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_1imxj")
+
+[node name="Obstacle87" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, -34)
+
+[node name="__77934" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_d4mlx")
+
+[node name="__77935" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_j714p")
+
+[node name="Obstacle88" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 17)
+
+[node name="__77936" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_h8rv8")
+
+[node name="__77937" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ie2ji")
+
+[node name="Obstacle89" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 53)
+
+[node name="__77938" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_a2eaa")
+
+[node name="__77939" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_j22vf")
+
+[node name="Obstacle90" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 47)
+
+[node name="__77940" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_y0day")
+
+[node name="__77941" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_nl2ef")
+
+[node name="Obstacle91" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 0, -8)
+
+[node name="__77942" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_pqidj")
+
+[node name="__77943" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_80ag8")
+
+[node name="Obstacle92" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 53)
+
+[node name="__77944" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_oqxqc")
+
+[node name="__77945" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_7sx7n")
+
+[node name="Obstacle93" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 8)
+
+[node name="__77946" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_dt6dh")
+
+[node name="__77947" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_4i52q")
+
+[node name="Obstacle94" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55, 0, -11)
+
+[node name="__77948" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_v5ebb")
+
+[node name="__77949" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_oebok")
+
+[node name="Obstacle95" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -48)
+
+[node name="__77950" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_sxtgf")
+
+[node name="__77951" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_m4v5c")
+
+[node name="Obstacle96" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 55)
+
+[node name="__77952" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_cy6j3")
+
+[node name="__77953" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_iufu3")
+
+[node name="Obstacle97" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 5)
+
+[node name="__77954" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_k15hv")
+
+[node name="__77955" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_fidha")
+
+[node name="Obstacle98" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 32)
+
+[node name="__77956" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_nicmi")
+
+[node name="__77957" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_cbun5")
+
+[node name="Obstacle99" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, -35)
+
+[node name="__77958" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_heilb")
+
+[node name="__77959" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_t0k7p")
+
+[node name="Obstacle100" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 23)
+
+[node name="__77960" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_8gbr4")
+
+[node name="__77961" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_f1s1r")
+
+[node name="Obstacle101" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -29)
+
+[node name="__77962" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_5woa0")
+
+[node name="__77963" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_0ow3d")
+
+[node name="Obstacle102" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 32)
+
+[node name="__77964" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_hw4v8")
+
+[node name="__77965" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_43uf7")
+
+[node name="Obstacle103" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -30)
+
+[node name="__77966" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_hllu0")
+
+[node name="__77967" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_npb61")
+
+[node name="Obstacle104" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, -24)
+
+[node name="__77968" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_tgpfc")
+
+[node name="__77969" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_yd5va")
+
+[node name="Obstacle105" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -43)
+
+[node name="__77970" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_kced1")
+
+[node name="__77971" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_8vkxm")
+
+[node name="Obstacle106" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -51)
+
+[node name="__77972" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_ff1bb")
+
+[node name="__77973" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5ds6u")
+
+[node name="Obstacle107" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -48)
+
+[node name="__77974" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+shape = SubResource("BoxShape3D_7rppx")
+
+[node name="__77975" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_f8hfd")
+
+[node name="Obstacle108" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -29)
+
+[node name="__77976" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_06tgq")
+
+[node name="__77977" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_asq2k")
+
+[node name="Obstacle109" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 48)
+
+[node name="__77978" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_yon5x")
+
+[node name="__77979" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_2pbeh")
+
+[node name="Obstacle110" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="__77980" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_dqtxl")
+
+[node name="__77981" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_lgl3w")
+
+[node name="Obstacle111" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -30)
+
+[node name="__77982" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_37nnv")
+
+[node name="__77983" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_ho7mk")
+
+[node name="Obstacle112" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -32)
+
+[node name="__77984" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_uf1hi")
+
+[node name="__77985" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_c80po")
+
+[node name="Obstacle113" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -54)
+
+[node name="__77986" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_n8yd4")
+
+[node name="__77987" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_scgo6")
+
+[node name="Obstacle114" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, 36)
+
+[node name="__77988" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_kkxu2")
+
+[node name="__77989" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_mie1b")
+
+[node name="Obstacle115" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 26)
+
+[node name="__77990" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_qqpnl")
+
+[node name="__77991" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_io5r0")
+
+[node name="Obstacle116" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -11)
+
+[node name="__77992" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_tvoy8")
+
+[node name="__77993" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_4nwye")
+
+[node name="Obstacle117" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -42)
+
+[node name="__77994" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_ionjo")
+
+[node name="__77995" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_5nq2p")
+
+[node name="Obstacle118" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -52)
+
+[node name="__77996" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_y42as")
+
+[node name="__77997" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_rxreo")
+
+[node name="Obstacle119" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 0, 3)
+
+[node name="__77998" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_cw7pj")
+
+[node name="__77999" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_267hq")
+
+[node name="Obstacle120" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 17)
+
+[node name="__78000" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_n6qdd")
+
+[node name="__78001" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_icje0")
+
+[node name="Obstacle121" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -41)
+
+[node name="__78002" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_hpwfx")
+
+[node name="__78003" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_mvift")
+
+[node name="Obstacle122" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 39)
+
+[node name="__78004" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_yf61s")
+
+[node name="__78005" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_d43g2")
+
+[node name="Obstacle123" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 55)
+
+[node name="__78006" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_7omxy")
+
+[node name="__78007" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_cvjq3")
+
+[node name="Obstacle124" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 23)
+
+[node name="__78008" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_epv7t")
+
+[node name="__78009" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_0rdcw")
+
+[node name="Obstacle125" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, -17)
+
+[node name="__78010" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_vwb65")
+
+[node name="__78011" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_n0qrn")
+
+[node name="Obstacle126" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, -6)
+
+[node name="__78012" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_ei05c")
+
+[node name="__78013" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_sq80v")
+
+[node name="Obstacle127" type="StaticBody3D" parent="SouthArea/Obstacles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -51)
+
+[node name="__78014" type="CollisionShape3D" parent="SouthArea/Obstacles/Obstacle127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_fh0ea")
+
+[node name="__78015" type="MeshInstance3D" parent="SouthArea/Obstacles/Obstacle127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+material_override = SubResource("StandardMaterial3D_bwg1q")
+mesh = SubResource("BoxMesh_bs0r1")
+
+[node name="Platform" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 4.36693, 0)
+script = ExtResource("1_cmkw0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("BoxMesh_poic4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_nw4ay")
+
+[node name="Bridge" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bridge"]
+mesh = SubResource("PlaneMesh_ui1q2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_nw4ay")
+
+[node name="Gate" type="StaticBody3D" parent="." node_paths=PackedStringArray("nav_region")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, 0)
+script = ExtResource("2_qs2wc")
+nav_region = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Gate"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_gk0ji")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Gate"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.72832, 0)
+mesh = SubResource("BoxMesh_jq0os")
