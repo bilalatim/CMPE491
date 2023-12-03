@@ -1,0 +1,77 @@
+[gd_resource type="AnimationLibrary" load_steps=21 format=3 uid="uid://timnb2bse3v5"]
+
+[ext_resource type="Animation" uid="uid://dgyvg0knmfamt" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchIdle.tres" id="1_bwuac"]
+[ext_resource type="Animation" uid="uid://d6qpghxnol4c" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchTurnLeft.tres" id="2_u54n8"]
+[ext_resource type="Animation" uid="uid://s2slvur48g1p" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchTurnRight.tres" id="3_m0ydl"]
+[ext_resource type="Animation" uid="uid://dhxav86r57c20" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchWalk.tres" id="4_vf26s"]
+[ext_resource type="Animation" uid="uid://bxb75lexg1gcc" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchWalkLeft.tres" id="5_2nvmg"]
+[ext_resource type="Animation" uid="uid://c20bsjrd7upqu" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchWalkRight.tres" id="6_wk11u"]
+[ext_resource type="Animation" uid="uid://dtcus707ujg15" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Crouch.HumanoidCrouchWalkRightB.tres" id="7_hl7qi"]
+[ext_resource type="Animation" uid="uid://bcahkwebh02qb" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Dying.animation.tres" id="8_o6e6u"]
+[ext_resource type="Animation" uid="uid://mscriojom4kr" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Idle.animation.tres" id="9_inyql"]
+[ext_resource type="Animation" uid="uid://l3jabysm746v" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_IdleJumpUp.animation.tres" id="10_wvq3k"]
+[ext_resource type="Animation" uid="uid://uskhohkfruys" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_IdleWin.animation.tres" id="11_cotk8"]
+[ext_resource type="Animation" uid="uid://bfisjjhqc4ytg" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_JumpAndFall.animation.tres" id="12_fj5pk"]
+[ext_resource type="Animation" uid="uid://bn080qaj28aaw" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_MidAir.animation.tres" id="13_310e7"]
+[ext_resource type="Animation" uid="uid://brylpt848ktqn" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Run.animation.tres" id="14_22net"]
+[ext_resource type="Animation" uid="uid://bxps0g6yhl317" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_RunTurn.animation.tres" id="15_g64yb"]
+[ext_resource type="Animation" uid="uid://ji7qehn3mr5i" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_RunTurnSharp.animation.tres" id="16_nnv0s"]
+[ext_resource type="Animation" uid="uid://dp2n3jpxm3sm" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_StandTurn.animation.tres" id="17_x0yug"]
+[ext_resource type="Animation" uid="uid://buxukx21p7xe0" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_Walk.animation.tres" id="18_gv0uf"]
+[ext_resource type="Animation" uid="uid://bk53thf8w5oku" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_WalkTurn.animation.tres" id="19_52c1t"]
+[ext_resource type="Animation" uid="uid://c2jee47sna77l" path="res://Assets/NavMeshDemo/LowMan/Animation/Clips/Humanoid_WalkTurnSharp.animation.tres" id="20_4yomo"]
+
+[resource]
+resource_name = "Humanoid"
+_data = {
+"Humanoid_Crouch.HumanoidCrouchIdle": ExtResource("1_bwuac"),
+"Humanoid_Crouch.HumanoidCrouchTurnLeft": ExtResource("2_u54n8"),
+"Humanoid_Crouch.HumanoidCrouchTurnRight": ExtResource("3_m0ydl"),
+"Humanoid_Crouch.HumanoidCrouchWalk": ExtResource("4_vf26s"),
+"Humanoid_Crouch.HumanoidCrouchWalkLeft": ExtResource("5_2nvmg"),
+"Humanoid_Crouch.HumanoidCrouchWalkRight": ExtResource("6_wk11u"),
+"Humanoid_Crouch.HumanoidCrouchWalkRightB": ExtResource("7_hl7qi"),
+"Humanoid_Dying.animation": ExtResource("8_o6e6u"),
+"Humanoid_Idle.animation": ExtResource("9_inyql"),
+"Humanoid_IdleJumpUp.animation": ExtResource("10_wvq3k"),
+"Humanoid_IdleWin.animation": ExtResource("11_cotk8"),
+"Humanoid_JumpAndFall.animation": ExtResource("12_fj5pk"),
+"Humanoid_MidAir.animation": ExtResource("13_310e7"),
+"Humanoid_Run.animation": ExtResource("14_22net"),
+"Humanoid_RunTurn.animation": ExtResource("15_g64yb"),
+"Humanoid_RunTurnSharp.animation": ExtResource("16_nnv0s"),
+"Humanoid_StandTurn.animation": ExtResource("17_x0yug"),
+"Humanoid_Walk.animation": ExtResource("18_gv0uf"),
+"Humanoid_WalkTurn.animation": ExtResource("19_52c1t"),
+"Humanoid_WalkTurnSharp.animation": ExtResource("20_4yomo")
+}
+metadata/animation_guid_fileid_to_name = {
+"0d9d26e2162aa4d11ab075b34c029673:7400004": "Airborne_-9.00_0.00",
+"0d9d26e2162aa4d11ab075b34c029673:7400006": "Airborne_5.00_0.00",
+"0d9d26e2162aa4d11ab075b34c029673:7400008": "Airborne_0.00_0.00",
+"1062212255550964e974f3ffb3cbaae3:7400000": "Locomotion_0.50_1.00",
+"1062212255550964e974f3ffb3cbaae3:7400002": "Locomotion_-0.50_1.00",
+"1c52c953c83c2254a9fa72d50250f028:7400000": "Locomotion_0.50_0.50",
+"1c52c953c83c2254a9fa72d50250f028:7400002": "Locomotion_-0.50_0.50",
+"1cb8ed3cbba15f0479fbae54e0a963df:7400000": "Locomotion_0.00_1.00",
+"4b722364804e95e438feb87f955c83b4:7400000": "Dead",
+"51dd2e4c869794f75a0df7d54b210214:7400000": "Airborne_5.00_1.00",
+"51dd2e4c869794f75a0df7d54b210214:7400004": "Airborne_5.00_-1.00",
+"6fb3851da6a6f5948ab6892bee8ba920:7400000": "Locomotion_0.50_0.00",
+"6fb3851da6a6f5948ab6892bee8ba920:7400006": "Locomotion_1.00_0.00",
+"6fb3851da6a6f5948ab6892bee8ba920:7400010": "Locomotion_-0.50_0.00",
+"6fb3851da6a6f5948ab6892bee8ba920:7400014": "Locomotion_-1.00_0.00",
+"b1a5e04ae51004842aba06704a6c2903:7400000": "Locomotion_0.00_0.50",
+"bb141fc9a700c9c4ca7e6dadb8acf24b:7400000": "Locomotion_-1.00_0.50",
+"bb141fc9a700c9c4ca7e6dadb8acf24b:7400002": "Locomotion_1.00_0.50",
+"d89ea37480b6d75458aa38843e9688dc:7400002": "Crouching_0.00_0.00",
+"d89ea37480b6d75458aa38843e9688dc:7400004": "Crouching_0.00_1.00",
+"d89ea37480b6d75458aa38843e9688dc:7400008": "Crouching_-1.00_1.00",
+"d89ea37480b6d75458aa38843e9688dc:7400014": "Crouching_1.00_1.00",
+"dffa50cfe77e0434bbfa71245b3dd529:7400000": "Locomotion_0.00_0.00",
+"e30c19a9cb564f648a7ff762a3e673bd:7400000": "Win",
+"f03e10c73f30b4ab4aa8ea8f1cc16d36:7400002": "Airborne_0.00_-1.00",
+"f03e10c73f30b4ab4aa8ea8f1cc16d36:7400004": "Airborne_0.00_1.00",
+"f2bed5dc5afacff44a00de8daae9703b:7400000": "Locomotion_1.00_1.00",
+"f2bed5dc5afacff44a00de8daae9703b:7400002": "Locomotion_-1.00_1.00"
+}

@@ -1,0 +1,8 @@
+[gd_resource type="Skin" format=3 uid="uid://ccn3uhoqy0ras"]
+
+[resource]
+resource_name = "Skin3"
+bind_count = 1
+bind/0/name = &"Jaw"
+bind/0/bone = -1
+bind/0/pose = Transform3D(-0.997822, -0.0590642, 0.0293619, 0.0399904, -0.187715, 0.981409, -0.0524544, 0.980446, 0.189668, 0.0927387, 0.291757, -1.5417)

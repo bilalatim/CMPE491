@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkuf6ss5r4gvr"]
 
-[ext_resource type="ArrayMesh" uid="uid://idk1jg57lxmt" path="res://Assets/CityVoxelPack/Assets/roads/tall/Mesh/road17bisbis.road17bisbis.mesh" id="1_r0xwh"]
+[ext_resource type="ArrayMesh" uid="uid://d1a5g8nyn1rb4" path="res://Assets/CityVoxelPack/Assets/roads/tall/Mesh/road17bisbis.road17bisbis.mesh" id="1_r0xwh"]
 [ext_resource type="Material" uid="uid://dpmixi8f1fv5" path="res://Assets/CityVoxelPack/Assets/roads/Materials/roads.mat.tres" id="2_i34sv"]
 
 [node name="road17bisbis" type="Node3D"]
