@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckaxfmv6rfxi3"]
+
+[ext_resource type="PackedScene" uid="uid://c2jpi163k21ph" path="res://Assets/root_ball.tscn" id="1_fbjx0"]
+
+[node name="model Variant" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.8599, 3.8147e-06, 23.3509)
+
+[node name="Root Scene" parent="." instance=ExtResource("1_fbjx0")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)

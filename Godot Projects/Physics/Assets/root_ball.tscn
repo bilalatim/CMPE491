@@ -1,0 +1,59 @@
+[gd_scene load_steps=11 format=3 uid="uid://c2jpi163k21ph"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccxalvjac0up8" path="res://Assets/model.meshId0_name.mesh" id="1_0gb24"]
+[ext_resource type="Material" uid="uid://drxes155x3atv" path="res://Assets/model.Bolts.material" id="2_8cvve"]
+[ext_resource type="ArrayMesh" uid="uid://bvyc4ewftmdju" path="res://Assets/model.meshId1_name.mesh" id="3_me5yn"]
+[ext_resource type="Material" uid="uid://n6dujxklhx10" path="res://Assets/model 1.aiStandardSurface1SG.material" id="4_7dod2"]
+[ext_resource type="ArrayMesh" uid="uid://clywqbebyhhrw" path="res://Assets/model.meshId2_name.mesh" id="5_jqhqv"]
+[ext_resource type="ArrayMesh" uid="uid://bg18j83fygfv7" path="res://Assets/model.meshId3_name.mesh" id="6_vfao8"]
+[ext_resource type="ArrayMesh" uid="uid://dl0oqhp6wl5d1" path="res://Assets/model.meshId4_name.mesh" id="7_5g025"]
+[ext_resource type="ArrayMesh" uid="uid://cevyjilu3q0lg" path="res://Assets/model.meshId5_name.mesh" id="8_ctivw"]
+[ext_resource type="ArrayMesh" uid="uid://ck6kegs1ny3rn" path="res://Assets/model.meshId6_name.mesh" id="9_8adji"]
+[ext_resource type="ArrayMesh" uid="uid://bvj7q4o0qjap" path="res://Assets/model.meshId7_name.mesh" id="10_y5qib"]
+
+[node name="Root Scene" type="Node3D"]
+
+[node name="Cannon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.37303, 1.4616, -0.00039028)
+mesh = ExtResource("1_0gb24")
+skeleton = NodePath("")
+
+[node name="Bolts" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0724683, 0.663016, -0.00039013)
+material_override = ExtResource("2_8cvve")
+mesh = ExtResource("3_me5yn")
+skeleton = NodePath("")
+
+[node name="BaseBody_002" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0724683, 0.229822, -0.00039014)
+material_override = ExtResource("4_7dod2")
+mesh = ExtResource("5_jqhqv")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("2_8cvve")
+
+[node name="Wheel_BL" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.776768, 0.45082, -0.789522)
+mesh = ExtResource("6_vfao8")
+skeleton = NodePath("")
+
+[node name="Wheel_BR" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.776767, 0.45082, 0.788742)
+mesh = ExtResource("7_5g025")
+skeleton = NodePath("")
+
+[node name="Wheel_FL" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.921704, 0.45082, -0.789523)
+mesh = ExtResource("8_ctivw")
+skeleton = NodePath("")
+
+[node name="Wheel_FR" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.921704, 0.45082, 0.788741)
+mesh = ExtResource("9_8adji")
+skeleton = NodePath("")
+
+[node name="Plane_008" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0572139, 0, -0.0432048)
+visible = false
+material_override = ExtResource("4_7dod2")
+mesh = ExtResource("10_y5qib")
+skeleton = NodePath("")
