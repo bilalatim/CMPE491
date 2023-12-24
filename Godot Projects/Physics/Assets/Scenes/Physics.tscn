@@ -1,11 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://rre6axrebm71"]
+[gd_scene load_steps=12 format=3 uid="uid://rre6axrebm71"]
 
-[ext_resource type="PackedScene" uid="uid://ckaxfmv6rfxi3" path="res://Assets/model Variant.prefab.tscn" id="2_c84nb"]
+[ext_resource type="PackedScene" uid="uid://ckaxfmv6rfxi3" path="res://Assets/cannonball.tscn" id="2_c84nb"]
 [ext_resource type="PackedScene" uid="uid://qbo5ljybb71h" path="res://Assets/model 1.prefab.tscn" id="3_ajei6"]
 [ext_resource type="PackedScene" uid="uid://d03tgsoa6oniw" path="res://Assets/SuperiorWorlds/Highlands/Mountains/FREE/MountainFREE.prefab.tscn" id="4_jax0p"]
 [ext_resource type="Material" uid="uid://eg4lslrc77s3" path="res://Assets/Materials/Ground_albedo.mat.tres" id="4_lax11"]
 [ext_resource type="ArrayMesh" uid="uid://bvj7q4o0qjap" path="res://Assets/model.meshId7_name.mesh" id="5_5qg5q"]
 [ext_resource type="Material" uid="uid://ctfjin3tfrq7g" path="res://Assets/model.Ground.material" id="6_2ifu1"]
+[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="7_1v34e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i1i6n"]
 resource_name = "Default-Skybox"
@@ -15674,6 +15675,8 @@ surface_material_override/0 = ExtResource("6_2ifu1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plane/Area3D"]
 transform = Transform3D(80, 0, 0, 0, 80, 0, 0, 0, 80, -23.6674, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_1md6f")
+
+[node name="FPS" parent="." instance=ExtResource("7_1v34e")]
 
 [editable path="CannonBall/model Variant"]
 [editable path="CannonBall/model Variant (1)"]
