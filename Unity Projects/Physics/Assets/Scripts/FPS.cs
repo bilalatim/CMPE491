@@ -6,6 +6,9 @@ using System.Collections;
 public class FPS : MonoBehaviour
 {
     private float count;
+    private float totalFPS;
+    private int FPScount = 0;
+    private int time = 0;
     
     private IEnumerator Start()
     {
@@ -13,6 +16,15 @@ public class FPS : MonoBehaviour
         while (true)
         {
             count = 1f / Time.unscaledDeltaTime;
+            totalFPS += count;
+            FPScount++;
+            if(FPScount%10 == 0)
+            {
+                time++;
+                Debug.Log("Average FPS: " + (totalFPS / FPScount) + " time: " + time);
+                totalFPS = 0;
+                FPScount = 0;
+            }
             yield return new WaitForSeconds(0.1f);
         }
     }

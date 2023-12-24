@@ -7,6 +7,8 @@ public class FireBall : MonoBehaviour
 
     float forceMagnitude;
     GameObject objectToInstantiate;
+    GameObject newObject1;
+    GameObject newObject2;
 
     void Start()
     {
@@ -15,11 +17,50 @@ public class FireBall : MonoBehaviour
 
         if (objectToInstantiate != null)
         {
+            newObject1= Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
+            newObject2 = Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
+            newObject1.SetActive(false);
+            newObject2.SetActive(false);
             StartCoroutine(FireNewBall());
         }
         else
         {
             Debug.LogError("Prefab yüklenemedi! Lütfen doğru dosya yolu belirttiğinizden emin olun.");
+        }
+    }
+    bool isObject1 = true;
+    IEnumerator FirePooledBall()
+    {
+        while (true)
+        {
+            if (isObject1)
+            {
+                newObject1.SetActive(false);
+                newObject1.transform.position = transform.position;
+                newObject1.SetActive(true);
+                Rigidbody rb = newObject1.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    Vector3 forceDirection = transform.rotation.y == 0 ? new Vector3(-1.0f, Random.Range(0, 0.3f), Random.Range(-0.3f, 0.3f)) : new Vector3(1.0f, Random.Range(0, 0.3f), Random.Range(-0.3f, 0.3f));
+                    rb.AddForce(forceDirection * forceMagnitude, ForceMode.Impulse);
+                }
+                isObject1 = false;
+            }
+            else
+            {
+                newObject2.SetActive(false);
+                newObject2.transform.position = transform.position;
+                newObject2.SetActive(true);
+                Rigidbody rb = newObject2.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    Vector3 forceDirection = transform.rotation.y == 0 ? new Vector3(-1.0f, Random.Range(0, 0.3f), Random.Range(-0.3f, 0.3f)) : new Vector3(1.0f, Random.Range(0, 0.3f), Random.Range(-0.3f, 0.3f));
+                    rb.AddForce(forceDirection * forceMagnitude, ForceMode.Impulse);
+                }
+                isObject1 = true;
+            }
+            
+            yield return new WaitForSeconds(Random.Range(2f, 4f));
         }
     }
 
@@ -38,7 +79,7 @@ public class FireBall : MonoBehaviour
                 Vector3 forceDirection = transform.rotation.y == 0 ? new Vector3(-1.0f, Random.Range(0,0.3f), Random.Range(-0.3f,0.3f)) : new Vector3(1.0f, Random.Range(0,0.3f), Random.Range(-0.3f,0.3f));
                 rb.AddForce(forceDirection * forceMagnitude, ForceMode.Impulse);
             }
-            yield return new WaitForSeconds(Random.Range(1f, 4f));
+            yield return new WaitForSeconds(Random.Range(2f, 4f));
         }
     }
 }
