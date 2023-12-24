@@ -1,13 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://cpef6dcc3opww"]
+[gd_scene load_steps=11 format=3 uid="uid://cpef6dcc3opww"]
 
-[ext_resource type="PackedScene" uid="uid://cl24ougy1e4p3" path="res://wall_block_prefab.tscn" id="1_5uph3"]
 [ext_resource type="ArrayMesh" uid="uid://gkacnvy1tift" path="res://Assets/MazeWithoutcelling.Wall_Clone_.mesh" id="1_h6og0"]
 [ext_resource type="Material" uid="uid://dlmmiwea6gp78" path="res://Assets/Walls.mat.tres" id="2_xuh41"]
 [ext_resource type="Material" uid="uid://40b6ge0if1q4" path="res://Assets/MazeWithoutcelling.WallMaterial.material" id="3_83r0m"]
 [ext_resource type="Material" uid="uid://dsoi278iijpyp" path="res://Assets/Obstacles.mat.tres" id="4_4si2s"]
 [ext_resource type="PackedScene" uid="uid://dot5md0kd8nfl" path="res://Assets/Agent1.tscn" id="5_hs3ra"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://Assets/FPS.tscn" id="6_jp74l"]
-[ext_resource type="Script" path="res://gate.gd" id="8_vhjnj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hdkdu"]
 resource_name = "Default-Skybox"
@@ -32,21 +29,6 @@ sample_partition_type = 1
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_u5iji"]
 data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_gk0ji"]
-size = Vector3(8, 8, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_jq0os"]
-size = Vector3(8, 8, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_nw4ay"]
-size = Vector3(8, 1, 4)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_ui1q2"]
-size = Vector2(8, 4)
-
-[sub_resource type="NavigationMesh" id="NavigationMesh_b34ga"]
-filter_baking_aabb = AABB(-4, 0, -3, 8, 1, 6)
 
 [node name="RootNode3D" type="Node3D"]
 
@@ -122,7 +104,55 @@ shadow_normal_bias = 0.4
 
 [node name="Blocks" type="Node3D" parent="."]
 
-[node name="Wall_Clone__838 (1)" parent="Blocks" instance=ExtResource("1_5uph3")]
+[node name="Wall_Clone__838 (1)" type="Node3D" parent="Blocks"]
+transform = Transform3D(2.1, 0, 0, 0, 1.75, 0, 0, 0, 2.1, -12.6, 1, 44.1)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Blocks/Wall_Clone__838 (1)"]
+editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:863555851]"
+mesh = ExtResource("1_h6og0")
+surface_material_override/0 = ExtResource("4_4si2s")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 863555849, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "39243d3bc186cd54d8b83bc62ba41847", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1
+}
 
 [node name="Wall_Clone__656 (1)" type="Node3D" parent="Blocks"]
 transform = Transform3D(2.1, 0, 0, 0, 1.75, 0, 0, 0, 2.1, -6.3, 1, 29.4)
@@ -226,7 +256,6 @@ metadata/unidot_keys = {
 
 [node name="Wall_Clone__730 (1)" type="Node3D" parent="Blocks"]
 transform = Transform3D(2.1, 0, 0, 0, 1.75, 0, 0, 0, 2.1, -35.7, 1, 35.7)
-visible = false
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="Blocks/Wall_Clone__730 (1)"]
 editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:2085309187]"
@@ -102876,36 +102905,3 @@ metadata/unidot_keys = {
 }
 
 [node name="Agent" parent="." instance=ExtResource("5_hs3ra")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.6656, 0, 35.0387)
-
-[node name="FPS" parent="." instance=ExtResource("6_jp74l")]
-
-[node name="Bridge3" type="Node3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -35.9614, 0.18424, 35.8306)
-
-[node name="Gate2" type="StaticBody3D" parent="Bridge3" node_paths=PackedStringArray("nav_region")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
-script = ExtResource("8_vhjnj")
-nav_region = NodePath("../Bridge2/MeshInstance3D/NavigationRegion3D2")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge3/Gate2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-shape = SubResource("BoxShape3D_gk0ji")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Bridge3/Gate2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.99435, 0)
-mesh = SubResource("BoxMesh_jq0os")
-
-[node name="Bridge2" type="StaticBody3D" parent="Bridge3"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge3/Bridge2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-shape = SubResource("BoxShape3D_nw4ay")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Bridge3/Bridge2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0137634)
-mesh = SubResource("PlaneMesh_ui1q2")
-
-[node name="NavigationRegion3D2" type="NavigationRegion3D" parent="Bridge3/Bridge2/MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.254556, 0)
-navigation_mesh = SubResource("NavigationMesh_b34ga")

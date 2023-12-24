@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://cq3svkxe8ouwo"]
+
+[ext_resource type="Script" path="res://gate.gd" id="1_jwabj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gk0ji"]
+size = Vector3(8, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jq0os"]
+size = Vector3(8, 8, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ui1q2"]
+size = Vector2(8, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nw4ay"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_7a4wj"]
+filter_baking_aabb = AABB(-4, 0, -3, 8, 1, 6)
+
+[node name="Bridge3" type="Node3D"]
+
+[node name="Gate2" type="StaticBody3D" parent="." node_paths=PackedStringArray("nav_region")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
+script = ExtResource("1_jwabj")
+nav_region = NodePath("../Bridge2/BridgeNavRegion")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Gate2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+shape = SubResource("BoxShape3D_gk0ji")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Gate2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.99435, 0)
+mesh = SubResource("BoxMesh_jq0os")
+
+[node name="Bridge2" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bridge2"]
+mesh = SubResource("PlaneMesh_ui1q2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_nw4ay")
+
+[node name="BridgeNavRegion" type="NavigationRegion3D" parent="Bridge2"]
+navigation_mesh = SubResource("NavigationMesh_7a4wj")
+enabled = false
