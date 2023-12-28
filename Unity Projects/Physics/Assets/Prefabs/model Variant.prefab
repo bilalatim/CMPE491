@@ -466,6 +466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985916fd2c3c38b4fa420da138ce13d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballParent: {fileID: 0}
+  isPooled: 0
 --- !u!1 &5409899013491344346
 GameObject:
   m_ObjectHideFlags: 0

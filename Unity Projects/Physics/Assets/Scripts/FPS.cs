@@ -18,9 +18,9 @@ public class FPS : MonoBehaviour
             count = 1f / Time.unscaledDeltaTime;
             totalFPS += count;
             FPScount++;
-            if(FPScount%10 == 0)
+            if(FPScount%50 == 0)
             {
-                time++;
+                time+=5;
                 Debug.Log("Average FPS: " + (totalFPS / FPScount) + " time: " + time);
                 totalFPS = 0;
                 FPScount = 0;

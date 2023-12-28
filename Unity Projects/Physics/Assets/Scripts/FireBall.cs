@@ -9,23 +9,29 @@ public class FireBall : MonoBehaviour
     GameObject objectToInstantiate;
     GameObject newObject1;
     GameObject newObject2;
+    public GameObject ballParent;
+    public bool isPooled = false;
 
     void Start()
     {
         forceMagnitude = Random.Range(50.0f, 100.0f);
         objectToInstantiate = Resources.Load<GameObject>("Ball");
 
-        if (objectToInstantiate != null)
+        if (objectToInstantiate != null && ballParent != null && isPooled)
         {
-            newObject1= Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
-            newObject2 = Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
+            newObject1= Instantiate(objectToInstantiate, transform.position, Quaternion.identity, ballParent.transform);
+            newObject2 = Instantiate(objectToInstantiate, transform.position, Quaternion.identity, ballParent.transform);
             newObject1.SetActive(false);
             newObject2.SetActive(false);
+            StartCoroutine(FirePooledBall());
+        }
+        else if (objectToInstantiate != null && ballParent != null && !isPooled)
+        {
             StartCoroutine(FireNewBall());
         }
         else
         {
-            Debug.LogError("Prefab yüklenemedi! Lütfen doğru dosya yolu belirttiğinizden emin olun.");
+            Debug.Log("Prefab yüklenemedi! Lütfen doğru dosya yolu belirttiğinizden emin olun.");
         }
     }
     bool isObject1 = true;
@@ -68,7 +74,7 @@ public class FireBall : MonoBehaviour
     {
         while (true)
         {
-            GameObject newObject = Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
+            GameObject newObject = Instantiate(objectToInstantiate, transform.position, Quaternion.identity, ballParent.transform);
 
             // RigidBody bileşenini al (varsa)
             Rigidbody rb = newObject.GetComponent<Rigidbody>();
