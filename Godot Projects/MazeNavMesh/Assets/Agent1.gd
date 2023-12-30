@@ -6,22 +6,20 @@ var SPEED = 4
 var targ: Vector3
 
 func _ready() -> void:
-	targ = Vector3(10,0,10)
-	updateTargetLocation(targ)
+	set_random_movement_target()
 
 func _physics_process(delta: float) -> void:
 		look_at(targ)
 		rotation.x = 0
 		rotation.z = 0
-			
 		
-		
-		if position.distance_to(targ) > 0.5:
-			var curLoc = global_transform.origin
-			var nextLoc = agent.get_next_path_position()
-			var newVel = (nextLoc - curLoc).normalized() * SPEED
-			velocity = newVel
-			move_and_slide()
+		var curLoc = global_transform.origin
+		var nextLoc = agent.get_next_path_position()
+		var newVel = (nextLoc - curLoc).normalized() * SPEED
+		velocity = newVel
+		move_and_slide()
+		if agent.is_navigation_finished():
+			set_random_movement_target()
 
 func updateTargetLocation(target) -> void:
 	agent.set_target_position(target)
@@ -47,3 +45,8 @@ func raycast_from_mouse():
 	query.collide_with_areas = true
 	
 	return space_state.intersect_ray(query)["position"]
+	
+func set_random_movement_target():
+	var randomTargetVector
+	randomTargetVector = Vector3(randf_range(-122,0), 0.5, randf_range(0, 122))
+	updateTargetLocation(randomTargetVector)

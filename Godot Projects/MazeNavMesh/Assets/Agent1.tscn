@@ -3,13 +3,15 @@
 [ext_resource type="Script" path="res://Assets/Agent1.gd" id="1_c2qln"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_fkd18"]
-radius = 0.3
+radius = 0.1
+height = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi7rn"]
 albedo_color = Color(0.819608, 0, 0.490196, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nqtu2"]
-radius = 0.3
+radius = 0.1
+height = 1.0
 
 [node name="Agent" type="CharacterBody3D"]
 script = ExtResource("1_c2qln")
@@ -21,11 +23,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_gi7rn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
 shape = SubResource("CapsuleShape3D_nqtu2")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-target_desired_distance = 0.5
-path_height_offset = 0.5
+target_desired_distance = 2.0
 navigation_layers = 3
 avoidance_enabled = true
 radius = 0.1

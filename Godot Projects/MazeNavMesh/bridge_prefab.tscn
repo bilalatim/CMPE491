@@ -19,10 +19,9 @@ filter_baking_aabb = AABB(-4, 0, -3, 8, 1, 6)
 
 [node name="Bridge3" type="Node3D"]
 
-[node name="Gate2" type="StaticBody3D" parent="." node_paths=PackedStringArray("nav_region")]
+[node name="Gate2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
 script = ExtResource("1_jwabj")
-nav_region = NodePath("../Bridge2/BridgeNavRegion")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Gate2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
