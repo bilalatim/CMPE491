@@ -13,6 +13,7 @@ public class Obstacles : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(3f);
             var pos = transform.position;
             if (pos.y > 10f)
             {
@@ -22,7 +23,7 @@ public class Obstacles : MonoBehaviour
             {
                 transform.position = new Vector3(pos.x, 15f, pos.z);
             }
-            yield return new WaitForSeconds(Random.Range(1f, 10f));
+            // yield return new WaitForSeconds(Random.Range(1f, 10f));
         }
     }
 }

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
@@ -16,32 +13,39 @@ public class PlayerController : MonoBehaviour
     {
         navMeshAgent.updateRotation = false;
         cam = Camera.main;
+        GenerateRandomPosition();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-            {
-                // navMeshAgent.SetDestination(hit.point);
-                navMeshAgent.destination = hit.point;
-            }
-            else
-            {
-                Debug.Log("Did not Hit");
-            }
-            
-        }
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        //     RaycastHit hit;
+        //     if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        //     {
+        //         // navMeshAgent.SetDestination(hit.point);
+        //         navMeshAgent.destination = hit.point;
+        //     }
+        //     else
+        //     {
+        //         Debug.Log("Did not Hit");
+        //     }
+        //     
+        // }
         if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance)
         {
             character?.Move(navMeshAgent.desiredVelocity, false, false);
         }
         else
         {
-            character?.Move(Vector3.zero, false, false);
+            GenerateRandomPosition();
         }
+    }
+    
+    void GenerateRandomPosition()
+    {
+        var randomPosition = new Vector3( Random.Range(0f, 120f), 0.5f, Random.Range(0f, 120f));
+        navMeshAgent.SetDestination(randomPosition);
     }
 }
