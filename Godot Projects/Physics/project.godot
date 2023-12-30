@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Physics"
+run/main_scene="res://Assets/Scenes/Physics with Pooling/PhysicsPool 1B 28 Cball.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ObjectPoolSingleton="*res://ObjectPool.gd"

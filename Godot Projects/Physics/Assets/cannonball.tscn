@@ -6,6 +6,8 @@
 [node name="cannonball" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.8599, 3.8147e-06, 23.3509)
 script = ExtResource("1_3o3dm")
+isPooling = true
+isFire = true
 
 [node name="Root Scene" parent="." instance=ExtResource("1_fbjx0")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)

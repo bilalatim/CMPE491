@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://qbo5ljybb71h"]
+[gd_scene load_steps=9 format=3 uid="uid://qbo5ljybb71h"]
 
 [ext_resource type="Texture2D" uid="uid://dydfulmrhcuer" path="res://Assets/textures 1/aiStandardSurface2SG_albedo.jpg" id="1_t3qpl"]
 [ext_resource type="ArrayMesh" uid="uid://bjj580bvrat3w" path="res://Assets/model 1.meshId1_name.mesh" id="2_0g7yw"]
@@ -14,9 +14,6 @@ size = Vector3(40, 40, 35)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1aly1"]
 albedo_texture = ExtResource("3_lpsrj")
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xtphl"]
-points = PackedVector3Array(-0.225, -0.225, -0.2, 0.225, -0.225, -0.2, -0.225, -0.225, 0.199961, -0.225, 0.224956, -0.2, 0.225, -0.225, 0.199961, 0.225, 0.224956, -0.2, -0.225, 0.224956, 0.199961, 0.225, 0.224956, 0.199961)
 
 [node name="model 1" type="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.0048, 1.5, -13.7)
@@ -128,7 +125,3 @@ metadata/unidot_keys = {
 "m_StaticShadowCaster": 0,
 "m_StitchLightmapSeams": 1
 }
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_xtphl")
