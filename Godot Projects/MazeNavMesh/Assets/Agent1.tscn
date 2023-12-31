@@ -3,11 +3,10 @@
 [ext_resource type="Script" path="res://Assets/Agent1.gd" id="1_c2qln"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_fkd18"]
-radius = 0.1
-height = 1.0
+radius = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi7rn"]
-albedo_color = Color(0.819608, 0, 0.490196, 1)
+albedo_color = Color(0, 0.556863, 0.137255, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nqtu2"]
 radius = 0.1
