@@ -51,5 +51,4 @@ shape = SubResource("RectangleShape2D_r2l52")
 position = Vector2(-14, -1)
 rect = Rect2(-10, -10, 60, 20)
 
-[connection signal="body_entered" from="Point" to="." method="_on_point_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

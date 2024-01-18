@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy2h4c6xvhyk5"
 path.s3tc="res://.godot/imported/bluebird-upflap.png-299555800775f69baeb983524641ea82.s3tc.ctex"
+path.etc2="res://.godot/imported/bluebird-upflap.png-299555800775f69baeb983524641ea82.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/sprites/bluebird-upflap.png"
-dest_files=["res://.godot/imported/bluebird-upflap.png-299555800775f69baeb983524641ea82.s3tc.ctex"]
+dest_files=["res://.godot/imported/bluebird-upflap.png-299555800775f69baeb983524641ea82.s3tc.ctex", "res://.godot/imported/bluebird-upflap.png-299555800775f69baeb983524641ea82.etc2.ctex"]
 
 [params]
 
