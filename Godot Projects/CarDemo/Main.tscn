@@ -3,9 +3,9 @@
 [ext_resource type="Material" uid="uid://bgaxci28to16o" path="res://Assets/CityVoxelPack/Assets/pavements/Materials/pavement1.mat.tres" id="3_jur2x"]
 [ext_resource type="PackedScene" uid="uid://dr64hgk51fqqh" path="res://level.tscn" id="4_2ldjg"]
 [ext_resource type="PackedScene" uid="uid://dte35wtr7a35e" path="res://Agent0.tscn" id="5_evqmf"]
-[ext_resource type="PackedScene" uid="uid://w47y7xjl6nif" path="res://Assets/player/player.tscn" id="5_td27l"]
 [ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="6_2uaxy"]
 [ext_resource type="ArrayMesh" uid="uid://dm6eoqgkh64wt" path="res://Assets/CityVoxelPack/Assets/roads/tall/Mesh/road15.road15.mesh" id="7_wchaq"]
+[ext_resource type="PackedScene" uid="uid://dcg6fjd226qci" path="res://nissan_gtr.tscn" id="8_ern53"]
 [ext_resource type="Material" uid="uid://dpmixi8f1fv5" path="res://Assets/CityVoxelPack/Assets/roads/Materials/roads.mat.tres" id="8_y00kc"]
 [ext_resource type="ArrayMesh" uid="uid://bqocd3eseupo0" path="res://Assets/CityVoxelPack/Assets/pavements/Mesh/pavement1-10.pavement1-10.mesh" id="72_ng55k"]
 
@@ -181,9 +181,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.2458, 4, -48.5605)
 
 [node name="MeshRenderer" parent="Level2/Roads/Road6/road16bisbis/road16bisbis" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -0.549561)
-
-[node name="Player" parent="." instance=ExtResource("5_td27l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 493.271, 3.39917, -399.281)
 
 [node name="NavigationRegion3D2" type="NavigationRegion3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -144.915, 0, -3.35953)
@@ -611,6 +608,9 @@ metadata/unidot_keys = {
 "m_StaticBatchRoot": [null, 0, null, null],
 "m_StitchLightmapSeams": 1
 }
+
+[node name="Nissan GTR" parent="." instance=ExtResource("8_ern53")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 480.817, 1.89374, -277.056)
 
 [editable path="Level2"]
 [editable path="Level2/Alley/Alley1/pavement1-10"]
