@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://bgu7grdk7xug8"]
 
-[ext_resource type="PackedScene" uid="uid://cl24ougy1e4p3" path="res://wall_block_prefab.tscn" id="1_kkf6f"]
+[ext_resource type="PackedScene" path="res://wall_block_prefab.tscn" id="1_kkf6f"]
 [ext_resource type="ArrayMesh" uid="uid://gkacnvy1tift" path="res://Assets/MazeWithoutcelling.Wall_Clone_.mesh" id="2_gsco8"]
 [ext_resource type="Material" uid="uid://dsoi278iijpyp" path="res://Assets/Obstacles.mat.tres" id="3_26a2o"]
 [ext_resource type="Material" uid="uid://dlmmiwea6gp78" path="res://Assets/Walls.mat.tres" id="4_ans14"]
 [ext_resource type="Material" uid="uid://40b6ge0if1q4" path="res://Assets/MazeWithoutcelling.WallMaterial.material" id="5_qaiu6"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="6_u8wn1"]
+[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://Assets/FPS.tscn" id="6_u8wn1"]
 [ext_resource type="PackedScene" uid="uid://dot5md0kd8nfl" path="res://Assets/Agent1.tscn" id="7_xn55m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hdkdu"]

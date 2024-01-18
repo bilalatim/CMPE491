@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://dlmmiwea6gp78" path="res://Assets/Walls.mat.tres" id="2_xuh41"]
 [ext_resource type="Material" uid="uid://40b6ge0if1q4" path="res://Assets/MazeWithoutcelling.WallMaterial.material" id="3_83r0m"]
 [ext_resource type="PackedScene" uid="uid://dot5md0kd8nfl" path="res://Assets/Agent1.tscn" id="5_hs3ra"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="6_jp74l"]
+[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://Assets/FPS.tscn" id="6_jp74l"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hdkdu"]
 resource_name = "Default-Skybox"
@@ -41019,7 +41019,6 @@ transform = Transform3D(6, 0, 0, 0, 5, 0, 0, 0, 6, -312, 2.5, 114)
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/MazeWithoutcelling/wall/Wall_Clone__822"]
 editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:3616517311079636771]"
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("1_h6og0")
 surface_material_override/0 = ExtResource("3_83r0m")
 metadata/unidot_keys = {
@@ -44120,7 +44119,6 @@ transform = Transform3D(6, 0, 0, 0, 5, 0, 0, 0, 6, -300, 2.5, 126)
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/MazeWithoutcelling/wall/Wall_Clone__885"]
 editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:4989815237895074352]"
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("1_h6og0")
 surface_material_override/0 = ExtResource("3_83r0m")
 metadata/unidot_keys = {
@@ -51971,7 +51969,6 @@ transform = Transform3D(6, 0, 0, 0, 5, 0, 0, 0, 6, -168, 2.5, 162)
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/MazeWithoutcelling/wall/Wall_Clone__1042"]
 editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:5541574960590365936]"
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("1_h6og0")
 surface_material_override/0 = ExtResource("3_83r0m")
 metadata/unidot_keys = {
@@ -55022,7 +55019,6 @@ transform = Transform3D(6, 0, 0, 0, 5, 0, 0, 0, 6, -168, 2.5, 174)
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="NavigationRegion3D/MazeWithoutcelling/wall/Wall_Clone__1103"]
 editor_description = "[MeshRenderer 23::59851213aece8be4b83a15aeaf903bb9:2544630109224784500]"
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("1_h6og0")
 surface_material_override/0 = ExtResource("3_83r0m")
 metadata/unidot_keys = {

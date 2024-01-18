@@ -6,7 +6,7 @@
 [ext_resource type="Material" uid="uid://eg4lslrc77s3" path="res://Assets/Materials/Ground_albedo.mat.tres" id="4_arv6g"]
 [ext_resource type="ArrayMesh" uid="uid://bvj7q4o0qjap" path="res://Assets/model.meshId7_name.mesh" id="5_y4igg"]
 [ext_resource type="Material" uid="uid://ctfjin3tfrq7g" path="res://Assets/model.Ground.material" id="6_6j0cg"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="7_7pqln"]
+[ext_resource type="PackedScene" path="res://FPS.tscn" id="7_7pqln"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i1i6n"]
 resource_name = "Default-Skybox"
@@ -103,115 +103,87 @@ shadow_normal_bias = 0.4
 
 [node name="model Variant" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 152.6)
-isPooling = false
 
 [node name="model Variant (1)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 142.6)
-isPooling = false
 
 [node name="model Variant (2)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 132.6)
-isPooling = false
 
 [node name="model Variant (3)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 132.6)
-isPooling = false
 
 [node name="model Variant (4)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 122.6)
-isPooling = false
 
 [node name="model Variant (5)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 112.6)
-isPooling = false
 
 [node name="model Variant (6)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 102.6)
-isPooling = false
 
 [node name="model Variant (7)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 92.6)
-isPooling = false
 
 [node name="model Variant (8)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 82.6)
-isPooling = false
 
 [node name="model Variant (9)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 72.6)
-isPooling = false
 
 [node name="model Variant (10)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 62.6)
-isPooling = false
 
 [node name="model Variant (11)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 52.6)
-isPooling = false
 
 [node name="model Variant (12)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 42.6)
-isPooling = false
 
 [node name="model Variant (13)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -200, 0, 32.6)
-isPooling = false
 
 [node name="model Variant (55)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 147.1)
-isPooling = false
 
 [node name="model Variant (54)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 137.1)
-isPooling = false
 
 [node name="model Variant (53)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 127.1)
-isPooling = false
 
 [node name="model Variant (52)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 127.1)
-isPooling = false
 
 [node name="model Variant (51)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 117.1)
-isPooling = false
 
 [node name="model Variant (50)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 107.1)
-isPooling = false
 
 [node name="model Variant (49)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 97.1)
-isPooling = false
 
 [node name="model Variant (48)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 87.1)
-isPooling = false
 
 [node name="model Variant (47)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 77.1)
-isPooling = false
 
 [node name="model Variant (46)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 67.1)
-isPooling = false
 
 [node name="model Variant (45)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 57.1)
-isPooling = false
 
 [node name="model Variant (44)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 47.1)
-isPooling = false
 
 [node name="model Variant (43)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 37.1)
-isPooling = false
 
 [node name="model Variant (42)" parent="CannonBall" instance=ExtResource("1_1db1p")]
 transform = Transform3D(-0.03, 0, 0, 0, 0.03, 0, 0, 0, -0.03, 90, 0, 27.1)
-isPooling = false
 
 [node name="Boxes 512" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0545, 0, 0)

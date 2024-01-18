@@ -24,27 +24,27 @@ func _physics_process(delta: float) -> void:
 func updateTargetLocation(target) -> void:
 	agent.set_target_position(target)
 
-func _unhandled_input(event):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		targ = raycast_from_mouse()
-		updateTargetLocation(targ)
+#func _unhandled_input(event):
+	#if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		#targ = raycast_from_mouse()
+		#updateTargetLocation(targ)
 
 		
-func raycast_from_mouse():
-	var m_pos = get_viewport().get_mouse_position()
-	var cam = get_tree().root.get_camera_3d()
-	var ray_start = cam.project_ray_origin(m_pos)
-	var ray_end = ray_start + cam.project_ray_normal(m_pos) * 2000
-	var world3d : World3D = get_world_3d()
-	var space_state = world3d.direct_space_state
-	
-	if space_state == null:
-		return
-	
-	var query = PhysicsRayQueryParameters3D.create(ray_start, ray_end, collision_mask)
-	query.collide_with_areas = true
-	
-	return space_state.intersect_ray(query)["position"]
+#func raycast_from_mouse():
+	#var m_pos = get_viewport().get_mouse_position()
+	#var cam = get_tree().root.get_camera_3d()
+	#var ray_start = cam.project_ray_origin(m_pos)
+	#var ray_end = ray_start + cam.project_ray_normal(m_pos) * 2000
+	#var world3d : World3D = get_world_3d()
+	#var space_state = world3d.direct_space_state
+	#
+	#if space_state == null:
+		#return
+	#
+	#var query = PhysicsRayQueryParameters3D.create(ray_start, ray_end, collision_mask)
+	#query.collide_with_areas = true
+	#
+	#return space_state.intersect_ray(query)["position"]
 	
 func set_random_movement_target():
 	var randomTargetVector

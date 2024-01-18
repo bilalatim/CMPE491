@@ -10,4 +10,4 @@ isPooling = true
 isFire = true
 
 [node name="Root Scene" parent="." instance=ExtResource("1_fbjx0")]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)

@@ -20,6 +20,7 @@ func _ready() -> void:
 		add_child(object2)
 		#_spawn_timer.connect("timeout", Callable(self, "_spawner_timeout"))
 		#_spawn_timer.start(spawn_delay)
+	#fire()
 		
 func _spawner_timeout():
 	_start_wave()
@@ -76,7 +77,8 @@ func Reuse() -> void:
 		isball1 = true
 
 
-var delay: float = 5.0
+var delay: float = 6.0
+
 func _process(delta: float) -> void:
 	# Belirli aralıklarla rastgele güç uygula
 	delay -= delta
@@ -87,4 +89,14 @@ func _process(delta: float) -> void:
 			else:
 				Instantiate()
 		delay = randf_range(2, 4) # Gecikmeyi sıfırla
+		
+#func fire():
+	#while true:
+		#if isFire:
+			#if isPooling:
+				#Reuse()
+			#else:
+				#Instantiate()
+		#delay = randf_range(2, 4)
+		#await get_tree().create_timer(delay).timeout
 	

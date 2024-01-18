@@ -6,7 +6,7 @@
 [ext_resource type="Material" uid="uid://eg4lslrc77s3" path="res://Assets/Materials/Ground_albedo.mat.tres" id="4_41agh"]
 [ext_resource type="ArrayMesh" uid="uid://bvj7q4o0qjap" path="res://Assets/model.meshId7_name.mesh" id="5_vu4td"]
 [ext_resource type="Material" uid="uid://ctfjin3tfrq7g" path="res://Assets/model.Ground.material" id="6_ocqc8"]
-[ext_resource type="PackedScene" uid="uid://0g1xe2tmiabh" path="res://FPS.tscn" id="7_cwa75"]
+[ext_resource type="PackedScene" path="res://FPS.tscn" id="7_cwa75"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i1i6n"]
 resource_name = "Default-Skybox"
@@ -36,7 +36,7 @@ environment = SubResource("Environment_oy8ju")
 transform = Transform3D(0.999985, 0.00362655, 0.00400011, 4.07379e-05, 0.735765, -0.677237, -0.00539918, 0.677228, 0.735754, -61.3245, 124.239, -172.43)
 
 [node name="Camera" type="Camera3D" parent="Main Camera"]
-transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0)
+transform = Transform3D(-1, 0, -8.74227e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 cull_mask = 4294967295
 fov = 60.0
 size = 5.0

@@ -12,7 +12,7 @@ public class InstantiatePlayer : MonoBehaviour
     {
         for (int p = 0; p < playerCount; p++)
         {
-            Instantiate(playerPrefab, new Vector3(transform.position.x,-2,transform.position.z), Quaternion.identity, playerParent);
+            Instantiate(playerPrefab, new Vector3(transform.position.x,0,transform.position.z), Quaternion.identity, playerParent);
         }
     }
 

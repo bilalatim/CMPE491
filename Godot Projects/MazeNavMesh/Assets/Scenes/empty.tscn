@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://nyfaooc2x8sq"]
+
+[ext_resource type="PackedScene" path="res://FPS.tscn" id="1_0q8k4"]
+
+[node name="Empty" type="Node3D"]
+
+[node name="FPS" parent="." instance=ExtResource("1_0q8k4")]

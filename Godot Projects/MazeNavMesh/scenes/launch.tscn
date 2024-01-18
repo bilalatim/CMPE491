@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://rfiggjkf707t"]
+
+[ext_resource type="Script" path="res://scenes/launch.gd" id="1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="TowerButtonNode" type="Button" parent="."]
+layout_mode = 0
+offset_left = 462.06
+offset_top = 106.908
+offset_right = 616.06
+offset_bottom = 126.908
+text = "Tower Collapse (Node)"
+
+[node name="TowerButtonPS" type="Button" parent="."]
+layout_mode = 0
+offset_left = 455.031
+offset_top = 149.335
+offset_right = 625.031
+offset_bottom = 169.335
+text = "Tower Collapse (PhySrv)"
+
+[node name="SpawnButtonGDNode" type="Button" parent="."]
+layout_mode = 0
+offset_left = 456.919
+offset_top = 192.704
+offset_right = 617.919
+offset_bottom = 212.704
+text = "Spawn Cubes GD(Node)"
+
+[node name="SpawnButtonGDPS" type="Button" parent="."]
+layout_mode = 0
+offset_left = 453.148
+offset_top = 235.13
+offset_right = 622.148
+offset_bottom = 255.13
+text = "Spawn Cubes GD(PhySrv)"
+
+[node name="SpawnButtonCSPS" type="Button" parent="."]
+layout_mode = 0
+offset_left = 445.606
+offset_top = 283.214
+offset_right = 637.606
+offset_bottom = 303.214
+text = "Spawn Cubes CSharp(PhySrv)"
+
+[connection signal="pressed" from="TowerButtonNode" to="." method="_on_TowerButtonNode_pressed"]
+[connection signal="pressed" from="TowerButtonPS" to="." method="_on_TowerButtonPS_pressed"]
+[connection signal="pressed" from="SpawnButtonGDNode" to="." method="_on_SpawnButtonGDNode_pressed"]
+[connection signal="pressed" from="SpawnButtonGDPS" to="." method="_on_SpawnButtonGDPS_pressed"]
+[connection signal="pressed" from="SpawnButtonCSPS" to="." method="_on_SpawnButtonCSPS_pressed"]

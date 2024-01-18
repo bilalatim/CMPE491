@@ -6,11 +6,10 @@
 radius = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi7rn"]
-albedo_color = Color(0, 0.556863, 0.137255, 1)
+albedo_color = Color(0.921569, 0.14902, 0.160784, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nqtu2"]
-radius = 0.1
-height = 1.0
+radius = 0.4
 
 [node name="Agent" type="CharacterBody3D"]
 script = ExtResource("1_c2qln")
@@ -27,6 +26,7 @@ shape = SubResource("CapsuleShape3D_nqtu2")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 target_desired_distance = 2.0
+path_height_offset = 0.5
 navigation_layers = 3
 avoidance_enabled = true
 radius = 0.1
